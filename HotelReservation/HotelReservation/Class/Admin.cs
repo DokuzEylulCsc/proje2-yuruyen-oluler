@@ -9,15 +9,15 @@ namespace HotelReservation
     class Admin
     {
         private string id, adi,sifre;
-        public string getid
+        public string getId
         {
             get { return id; }
         }
-        public string getadi
+        public string getAdi
         {
             get { return adi; }
         }
-        public string getsifre
+        public string getSifre
         {
             get { return sifre; }
         }
@@ -30,15 +30,15 @@ namespace HotelReservation
         
 
         }
-        public void BilgileriGöster()
+        public void bilgileriGöster()
         {
 
         }
-        public void otelekle()
+        public void otelEkle()
         {
 
         }
-        public void odaekle()
+        public void odaEkle()
         {
 
         }

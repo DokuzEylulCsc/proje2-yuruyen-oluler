@@ -8,7 +8,7 @@ namespace HotelReservation
 {
     class ButikOtel : Otel
     {
-        public ButikOtel(string id, string yildiz, bool sauna, bool acikbufe, bool spa, bool havuz) : base(id, yildiz, sauna, acikbufe, spa, havuz)
+        public ButikOtel(string ad, string sehir, string yildiz, bool sauna, bool acikbufe, bool spa, bool havuz,bool internet) : base(ad, sehir, yildiz, sauna, acikbufe, spa, havuz,internet)
         {
 
         }
