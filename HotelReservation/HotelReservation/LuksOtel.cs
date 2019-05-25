@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace HotelReservation
 {
-    class PansiyonOtel:Otel
+    class LuksOtel : Otel
     {
-        
-        public PansiyonOtel(string ad, string sehir, string yildiz, bool internet) : base(ad, sehir, yildiz, internet)
+
+        public LuksOtel(string id, string yildiz, bool sauna, bool acikbufe, bool spa, bool havuz) : base(id, yildiz, sauna, acikbufe, spa, havuz)
         {
-            
+
         }
     }
 }

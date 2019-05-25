@@ -9,7 +9,7 @@ namespace HotelReservation
     class TatilKöyüOtel : Otel
     {
 
-        public TatilKöyüOtel(string ad, string sehir, string yildiz, bool acikbufe, bool havuz) : base(ad, sehir, yildiz, acikbufe,havuz)
+        public TatilKöyüOtel(string id, string yildiz, bool sauna, bool acikbufe, bool spa, bool havuz) : base(id, yildiz, sauna, acikbufe, spa, havuz)
         {
 
         }

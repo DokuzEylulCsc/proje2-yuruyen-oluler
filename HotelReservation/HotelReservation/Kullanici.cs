@@ -9,19 +9,19 @@ namespace HotelReservation
     class Kullanici
     {
         private string id,adi,telno,mail;
-        public string getId
+        public string getid
         {
             get { return id; }
         }
-        public string getQdi
+        public string getadi
         {
             get { return adi; }
         }
-        public string getTelNo
+        public string gettelno
         {
             get { return telno; }
         }
-        public string getMail
+        public string getmail
         {
             get { return mail; }
         }
@@ -33,15 +33,15 @@ namespace HotelReservation
             this.telno = telno;
 
         }
-        public void rezervasyonYap()
+        public void rezervasyonyap()
         {
 
         }
-        public void rezervasyonSil()
+        public void rezervasyonsil()
         {
 
         }
-        public void bilgiDegistirme()
+        public void bilgidegistirme()
         {
 
         }
