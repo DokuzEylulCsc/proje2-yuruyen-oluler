@@ -85,7 +85,7 @@ namespace HotelReservation
                 return acikBufe;
             }
         }
-        public Otel(string ad,string sehir,string yildiz,bool sauna,bool acikBufe,bool spa,bool havuz,bool oyunParki,bool internet,bool sporSalonu)//Lüks
+        public Otel(string ad,string sehir,string yildiz,bool sauna,bool acikBufe,bool spa,bool havuz,bool oyunParki,bool internet,bool sporSalonu)
         {
             this.yildiz = yildiz;
             this.ad = ad;
@@ -97,29 +97,10 @@ namespace HotelReservation
             this.internet = internet;
             this.sporSalonu = sporSalonu;
         }
-        public Otel(string ad, string sehir, string yildiz, bool internet) //Pansiyon için
-        {
-            this.yildiz = yildiz;
-            this.ad = ad;
-            this.internet = internet;
-        }
-        public Otel(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz,bool internet)//Butik Otel
-        {
-            this.yildiz = yildiz;
-            this.ad = ad;
-            this.sauna = sauna;
-            this.spa = spa;
-            this.acikBufe = acikBufe;
-            this.havuz = havuz;
-            this.internet = internet;
-        }
+        
+        public abstract void OdaEkleme(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu);
+        public abstract void OdaSilme(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu);
+        public abstract void OdaArama(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu);
 
-        public Otel(string ad, string sehir, string yildiz, bool acikBufe, bool havuz)//Tatil Köyü Otel
-        {
-            this.yildiz = yildiz;
-            this.ad = ad;
-            this.acikBufe = acikBufe;
-            this.havuz = havuz;
-        }
     }
 }

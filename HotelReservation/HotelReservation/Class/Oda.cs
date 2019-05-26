@@ -73,6 +73,8 @@ namespace HotelReservation
             this.denizManzara = denizManzara;
             this.tv = tv;
         }
+       
+
 
     }
     enum OdaDurumu //Odanın durumları sabit olacağından enum tanımladım. Daha sonra verilere GetNames metodu ile ulaşabiliriz.

@@ -34,11 +34,11 @@ namespace HotelReservation
         {
 
         }
-        public void otelEkle()
+        public void OtelEkle()
         {
 
         }
-        public void odaEkle()
+        public void OtelSil()
         {
 
         }

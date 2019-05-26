@@ -11,7 +11,21 @@ namespace HotelReservation
         
         public LuksOtel(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu) : base(ad, sehir, yildiz, sauna, acikBufe, spa, havuz,oyunParki,internet,oyunParki)
         {
-            
+
+
+        }
+        
+        public override void OdaEkleme(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu)
+        {
+            throw new NotImplementedException();
+        }
+        public override void OdaSilme(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu)
+        {
+            throw new NotImplementedException();
+        }
+        public override void OdaArama(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu)
+        {
+            throw new NotImplementedException();
         }
     }
 }

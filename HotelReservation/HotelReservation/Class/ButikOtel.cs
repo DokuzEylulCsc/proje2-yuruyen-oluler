@@ -8,9 +8,21 @@ namespace HotelReservation
 {
     class ButikOtel : Otel
     {
-        public ButikOtel(string ad, string sehir, string yildiz, bool sauna, bool acikbufe, bool spa, bool havuz,bool internet) : base(ad, sehir, yildiz, sauna, acikbufe, spa, havuz,internet)
+        public ButikOtel(string ad, string sehir, string yildiz, bool sauna, bool acikbufe, bool spa, bool havuz,bool oyunParki ,bool internet,bool sporSalonu) : base(ad, sehir, yildiz, sauna, acikbufe, spa, havuz,oyunParki,internet,sporSalonu)
         {
 
+        }
+        public override void OdaEkleme(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu)
+        {
+            throw new NotImplementedException();
+        }
+        public override void OdaSilme(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu)
+        {
+            throw new NotImplementedException();
+        }
+        public override void OdaArama(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu)
+        {
+            throw new NotImplementedException();
         }
     }
 }
