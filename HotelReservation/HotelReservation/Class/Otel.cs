@@ -98,9 +98,9 @@ namespace HotelReservation
             this.sporSalonu = sporSalonu;
         }
         
-        public abstract void OdaEkleme(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu);
-        public abstract void OdaSilme(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu);
-        public abstract void OdaArama(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu);
+        public abstract void OdaEkleme(Oda oda);
+        public abstract void OdaSilme(Oda oda);
+        public abstract void OdaArama(Oda oda);
 
     }
 }

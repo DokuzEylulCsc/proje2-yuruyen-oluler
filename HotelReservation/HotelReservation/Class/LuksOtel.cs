@@ -14,18 +14,18 @@ namespace HotelReservation
 
 
         }
-        
-        public override void OdaEkleme(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu)
+
+        public override void OdaEkleme(Oda oda)
         {
-            
+
         }
-        public override void OdaSilme(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu)
+        public override void OdaSilme(Oda oda)
         {
-            
+
         }
-        public override void OdaArama(string ad, string sehir, string yildiz, bool sauna, bool acikBufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu)
+        public override void OdaArama(Oda oda)
         {
-           
+
         }
     }
 }

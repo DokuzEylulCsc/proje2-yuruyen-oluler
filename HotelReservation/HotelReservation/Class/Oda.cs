@@ -64,6 +64,11 @@ namespace HotelReservation
             }
         }
 
+        public Oda(string id)
+        {
+            this.id = id;
+        }
+
         public Oda(string id, string fiyat, bool miniBar,bool jakuzi,bool denizManzara,bool tv)
         {
             this.id = id;

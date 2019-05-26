@@ -33,8 +33,5 @@ namespace HotelReservation
 
         }
         
-
-
-
     }
 }
