@@ -10,6 +10,14 @@ namespace HotelReservation
     {
         private string id,fiyat;
         private bool miniBar,tv,jakuzi,denizManzara;
+        private OdaDurumu odadurum;
+
+        public OdaDurumu OdaDurumu
+        {
+            get { return odadurum; }
+            set { odadurum = value; }
+        }
+
         public string getId
         {
             get
@@ -66,5 +74,13 @@ namespace HotelReservation
             this.tv = tv;
         }
 
+    }
+    enum OdaDurumu //Odanın durumları sabit olacağından enum tanımladım. Daha sonra verilere GetNames metodu ile ulaşabiliriz.
+        // Eğer enum tanımlamasaydım property olarak direk tanımlasaydım verilere ulaşmak için Oda.Method adı yazmak zorunda olcaktım 
+        //Bunları okuduktan sonra silersin
+    {
+        Bos,
+        Dolu,
+        Tadilatta,
     }
 }

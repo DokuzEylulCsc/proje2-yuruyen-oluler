@@ -13,7 +13,7 @@ namespace HotelReservation
         {
             get { return id; }
         }
-        public string getQdi
+        public string getid
         {
             get { return adi; }
         }

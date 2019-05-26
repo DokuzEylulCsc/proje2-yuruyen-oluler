@@ -12,9 +12,16 @@ namespace HotelReservation.Forms
 {
     public partial class AdminPaneli : Form
     {
+        AdminPaneli frm = new AdminPaneli();
         public AdminPaneli()
         {
             InitializeComponent();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frm.Show();
+            frm.Hide();
         }
     }
 }
