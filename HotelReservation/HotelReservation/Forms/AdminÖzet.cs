@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HotelReservation.Forms
 {
-    public partial class AdminÖzet : Button
+    public partial class AdminÖzet : Form
     {
         public AdminÖzet()
         {

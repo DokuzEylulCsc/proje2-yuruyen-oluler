@@ -82,7 +82,7 @@
       <DependentUpon>AdminPaneli.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AdminÖzet.cs">
-      <SubType>Form</SubType>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms\AdminÖzet.Designer.cs">
       <DependentUpon>AdminÖzet.cs</DependentUpon>
