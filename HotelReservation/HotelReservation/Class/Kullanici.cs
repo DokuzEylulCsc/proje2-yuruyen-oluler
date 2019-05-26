@@ -41,9 +41,13 @@ namespace HotelReservation
         {
 
         }
-        public void bilgiDegistirme()
+        public void rezervasyonduzenle()
         {
 
+        }
+        public void rezervasyonaara()
+        {
+            //Burada rez numarasına göre rezervasyon detayları verilcek.
         }
     }
 }

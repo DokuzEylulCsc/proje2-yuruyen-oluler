@@ -10,7 +10,7 @@ namespace HotelReservation
         
     {
         private string id;
-        private DateTime gelistarihi,donustarihi;
+        private DateTime gelistarihi, donustarihi;
         public string getId
         {
             get { return id; }
@@ -32,22 +32,7 @@ namespace HotelReservation
 
 
         }
-        public void RezervasyonEkle()
-        {
-
-        }
-        public void RezervasyonSil()
-        {
-
-        }
-        public void RezervasyonAra()
-        {
-
-        }
-        public void RezervasyonDuzenle()
-        {
-
-        }
+        
 
 
 
