@@ -105,6 +105,18 @@
     <Compile Include="Forms\KullanıcıKayıtFormu.Designer.cs">
       <DependentUpon>KullanıcıKayıtFormu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\OdaEkleFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OdaEkleFormu.Designer.cs">
+      <DependentUpon>OdaEkleFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OtelEkleFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OtelEkleFormu.Designer.cs">
+      <DependentUpon>OtelEkleFormu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\RezervasyonFormu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +148,12 @@
     <EmbeddedResource Include="Forms\KullanıcıKayıtFormu.resx">
       <DependentUpon>KullanıcıKayıtFormu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OdaEkleFormu.resx">
+      <DependentUpon>OdaEkleFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OtelEkleFormu.resx">
+      <DependentUpon>OtelEkleFormu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RezervasyonFormu.resx">
       <DependentUpon>RezervasyonFormu.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +166,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
