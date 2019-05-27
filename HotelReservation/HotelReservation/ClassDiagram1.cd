@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HotelReservation.Admin" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAAAAAAAgAAAAAAAAAAQAAAACEAEAAgBAgACCAgA=</HashCode>
+      <FileName>Class\Admin.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Otel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HotelReservation.ButikOtel" Collapsed="true">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Class\ButikOtel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelReservation.CiftKisilikOda" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\CiftKisilikOda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelReservation.İkiKisilikOda" Collapsed="true">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\İkiKisilikOda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelReservation.Kullanici" Collapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBAEAAAAAEQAEABAAAEAAAAAAAAAAACAAAAAAICAgE=</HashCode>
+      <FileName>Class\Kullanici.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Rezervasyon" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HotelReservation.LuksOtel" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Class\LuksOtel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelReservation.Oda" Collapsed="true">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgAAAQAAAAIAAAEEAAAAAAAAIABAAAAAAAQAEAQAAwA=</HashCode>
+      <FileName>Class\Oda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelReservation.Otel" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AqYACAAAIAKAAAAAAEAAAABsAkAAAAgAQwACgEACAAA=</HashCode>
+      <FileName>Class\Otel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Oda" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HotelReservation.PansiyonOtel" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Class\PansiyonOtel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelReservation.TatilKöyüOtel" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Class\TatilKöyüOtel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelReservation.TekKisilikOda" Collapsed="true">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\TekKisilikOda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelReservation.UcKisilikOda" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\UcKisilikOda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HotelReservation.Rezervasyon" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAAAAAAAAAAAAAAAAAAAAIAAAEAAAAAIAAAgA=</HashCode>
+      <FileName>Rezervasyon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="HotelReservation.OdaDurumu" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAABAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Oda.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

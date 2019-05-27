@@ -25,6 +25,15 @@ namespace HotelReservation
         {
             get { return mail; }
         }
+
+        internal Rezervasyon Rezervasyon
+        {
+            get => default(Rezervasyon);
+            set
+            {
+            }
+        }
+
         public Kullanici(string id,string adi, string telno, string mail)
         {
             this.id = id;

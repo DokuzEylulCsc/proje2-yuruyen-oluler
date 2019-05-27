@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace HotelReservation
 {
-   abstract class Otel
+  public abstract class Otel
     {
+        List<Oda> odaList = new List<Oda>();
         private string ad,yildiz,sehir;
         private bool sauna,acikBufe,spa,havuz,internet,sporSalonu,oyunParki;
         public string getAd
@@ -85,6 +86,15 @@ namespace HotelReservation
                 return acikBufe;
             }
         }
+
+        internal Oda Oda
+        {
+            get => default(Oda);
+            set
+            {
+            }
+        }
+
         public Otel(string ad,string sehir,string yildiz,bool sauna,bool acikBufe,bool spa,bool havuz,bool oyunParki,bool internet,bool sporSalonu)
         {
             this.yildiz = yildiz;
@@ -96,6 +106,11 @@ namespace HotelReservation
             this.oyunParki = oyunParki;
             this.internet = internet;
             this.sporSalonu = sporSalonu;
+        }
+        public Otel(string ad,string sehir)//Admin classında Bilgileri göster için
+        {
+            this.ad = ad;
+            this.sehir = sehir;
         }
         
         public abstract void OdaEkleme(Oda oda);

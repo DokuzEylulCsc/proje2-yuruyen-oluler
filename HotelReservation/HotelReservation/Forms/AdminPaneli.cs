@@ -23,5 +23,19 @@ namespace HotelReservation.Forms
             frm.Show();
             frm.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OtelEkleFormu form = new OtelEkleFormu();
+            form.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OdaEkleFormu odaEkleFormu = new OdaEkleFormu();
+            odaEkleFormu.Show();
+            this.Hide();
+        }
     }
 }
