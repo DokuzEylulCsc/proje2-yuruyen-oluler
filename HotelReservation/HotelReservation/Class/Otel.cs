@@ -91,6 +91,7 @@ namespace HotelReservation
         {
             this.yildiz = yildiz;
             this.ad = ad;
+            this.sehir = sehir;
             this.sauna = sauna;
             this.spa = spa;
             this.acikBufe = acikBufe;
@@ -111,12 +112,12 @@ namespace HotelReservation
 
         public string sehirismi()
         {
-            return $"Şehir :{sehir}";
+            return $"{sehir}";
         }
 
         public override string ToString()
         {
-            return $"Otel Adı :{ad}Şehir :{sehir} Yıldız :{yildiz} Sauna: {sauna}";
+            return $"Otel Adı :{ad} Şehir :{sehir} Yıldız :{yildiz} Sauna: {sauna} Spa: {spa} Açık Büfe: {acikBufe} Havuz: {havuz} Oyun Parkı {oyunParki} İnternet: {internet} Spor Salonu: {sporSalonu}";
         }
     }
 }

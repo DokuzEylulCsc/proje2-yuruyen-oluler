@@ -19,8 +19,13 @@ namespace HotelReservation.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AdminPaneli adminPaneli = new AdminPaneli();
-            adminPaneli.Show(); this.Hide();
+            Admin admin = new Admin();
+            if (textBox3.Text == admin.getSifre) //şifre kontrölü
+            {
+                AdminPaneli adminPaneli = new AdminPaneli();
+                adminPaneli.Show(); this.Hide();
+            }
+           
         }
     }
 }

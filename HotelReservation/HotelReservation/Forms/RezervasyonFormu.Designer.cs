@@ -73,6 +73,12 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.comboBox2.Location = new System.Drawing.Point(143, 104);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 24);
@@ -154,6 +160,11 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "Çift Kişilik",
+            "İki Kişilik",
+            "Tek Kişilik",
+            "Üç Kişilik"});
             this.comboBox4.Location = new System.Drawing.Point(143, 444);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 24);

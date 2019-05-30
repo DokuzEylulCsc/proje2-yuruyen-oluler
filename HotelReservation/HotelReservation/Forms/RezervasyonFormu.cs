@@ -16,11 +16,25 @@ namespace HotelReservation.Forms
         {
             InitializeComponent();
         }
-        Admin admin = new Admin();
-        Otel otel;
+        public void SetAllCity(List<Otel> input)//https://stackoverflow.com/questions/20441019/how-to-access-list-from-another-form
+        {
+            foreach (Otel s in input)
+            {
+                comboBox1.Items.Add(s.sehirismi());
+            }
+        }
+        private static List<Otel> otels = new List<Otel>();
+        public static List<Otel> GetOtels
+        {
+            get { return otels; }
+        }
         private void RezervasyonFormu_Load(object sender, EventArgs e)
         {
-            comboBox1.Items.Add(otel.sehirismi());
+            foreach (Otel otel in GetOtels)
+            {
+                    comboBox1.Items.Add(otel.sehirismi());
+            }
+            
         }
     }
 }

@@ -9,27 +9,16 @@ namespace HotelReservation
 {
     class Admin
     {
-        private string id, adi,sifre;
-        public string getId
-        {
-            get { return id; }
-        }
-        public string getAdi
-        {
-            get { return adi; }
-        }
+        private string sifre="admin";
+        
         public string getSifre
         {
             get { return sifre; }
         }
         
-        public Admin(string id, string adi, string sifre)
+        public Admin(string sifre)
         {
-            this.id = id;
-            this.adi = adi;
             this.sifre = sifre;
-        
-
         }
         public Admin()
         {
