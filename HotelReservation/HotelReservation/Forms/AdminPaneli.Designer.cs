@@ -122,7 +122,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(747, 223);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(148, 44);
             this.button3.TabIndex = 4;
@@ -144,7 +144,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(747, 171);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 24);
             this.comboBox1.TabIndex = 6;
@@ -168,6 +168,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AdminPaneli";
             this.Text = "AdminPaneli";
+            this.Load += new System.EventHandler(this.AdminPaneli_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

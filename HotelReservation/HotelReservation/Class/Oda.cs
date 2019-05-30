@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HotelReservation
 {
-    abstract class Oda
+    public abstract class Oda
     {
         private string id,fiyat;
         private bool miniBar,tv,jakuzi,denizManzara;
@@ -82,7 +82,7 @@ namespace HotelReservation
 
 
     }
-    enum OdaDurumu //Odanın durumları sabit olacağından enum tanımladım. Daha sonra verilere GetNames metodu ile ulaşabiliriz.
+    public enum OdaDurumu //Odanın durumları sabit olacağından enum tanımladım. Daha sonra verilere GetNames metodu ile ulaşabiliriz.
         // Eğer enum tanımlamasaydım property olarak direk tanımlasaydım verilere ulaşmak için Oda.Method adı yazmak zorunda olcaktım 
         //Bunları okuduktan sonra silersin
     {

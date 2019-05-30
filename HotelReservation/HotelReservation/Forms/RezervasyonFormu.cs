@@ -16,5 +16,11 @@ namespace HotelReservation.Forms
         {
             InitializeComponent();
         }
+        Admin admin = new Admin();
+        Otel otel;
+        private void RezervasyonFormu_Load(object sender, EventArgs e)
+        {
+            comboBox1.Items.Add(otel.sehirismi());
+        }
     }
 }

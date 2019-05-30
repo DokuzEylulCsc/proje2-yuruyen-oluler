@@ -12,7 +12,6 @@ namespace HotelReservation.Forms
 {
     public partial class AdminPaneli : Form
     {
-        AdminPaneli frm = new AdminPaneli();
         public AdminPaneli()
         {
             InitializeComponent();
@@ -20,8 +19,7 @@ namespace HotelReservation.Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            frm.Show();
-            frm.Hide();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,6 +34,11 @@ namespace HotelReservation.Forms
             OdaEkleFormu odaEkleFormu = new OdaEkleFormu();
             odaEkleFormu.Show();
             this.Hide();
+        }
+
+        private void AdminPaneli_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -9,7 +9,6 @@ namespace HotelReservation
 {
     class Admin
     {
-        List<Otel> otelList = new List<Otel>();
         private string id, adi,sifre;
         public string getId
         {
@@ -41,43 +40,47 @@ namespace HotelReservation
         {
             
         }
-        Forms.OtelEkleFormu OtelEkleFormu = new Forms.OtelEkleFormu();
+
+        public Forms.OtelEkleFormu OtelEkleFormu=new Forms.OtelEkleFormu();
         public static List<Otel> otels = new List<Otel>();
-        public void OtelEkle()
-        {
-            if (OtelEkleFormu.comboBox1.SelectedIndex == 0)
-            {
-                otels.Add(new ButikOtel(OtelEkleFormu.textBox1.Text, OtelEkleFormu.textBox2.Text, OtelEkleFormu.textBox3.Text, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
+        public static List<string> sehir = new List<string>();
+        Otel otel;
+        //public void OtelEkle()
+        //{
+        //    if (OtelEkleFormu.comboBox1.SelectedIndex == 0)
+        //    {
+        //        otels.Add(new ButikOtel(OtelEkleFormu.textBox1.Text, OtelEkleFormu.textBox2.Text, OtelEkleFormu.textBox3.Text, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
+        //    }
+        //    else if (OtelEkleFormu.comboBox1.SelectedIndex == 1)
+        //    {
+        //        otels.Add(new LuksOtel(OtelEkleFormu.textBox1.Text, OtelEkleFormu.textBox2.Text, OtelEkleFormu.textBox3.Text, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
+        //    }
+        //    else if (OtelEkleFormu.comboBox1.SelectedIndex == 2)
+        //    {
+        //        otels.Add(new PansiyonOtel(OtelEkleFormu.textBox1.Text, OtelEkleFormu.textBox2.Text, OtelEkleFormu.textBox3.Text, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
+        //    }
+        //    else if (OtelEkleFormu.comboBox1.SelectedIndex == 3)
+        //    {
+        //        otels.Add(new TatilKöyüOtel(OtelEkleFormu.textBox1.Text, OtelEkleFormu.textBox2.Text, OtelEkleFormu.textBox3.Text, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
+        //    }
+        //    OtelEkleFormu.textBox1.Text = otels[0].getAd + "1";
+        //    OtelEkleFormu.listBox1.Items.Add(otels.ToString());
+        //}
+        
 
-            }
-            else if (OtelEkleFormu.comboBox1.SelectedIndex == 1)
-            {
-                otels.Add(new LuksOtel(OtelEkleFormu.textBox1.Text, OtelEkleFormu.textBox2.Text, OtelEkleFormu.textBox3.Text, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
-            }
-            else if (OtelEkleFormu.comboBox1.SelectedIndex == 2)
-            {
-                otels.Add(new PansiyonOtel(OtelEkleFormu.textBox1.Text, OtelEkleFormu.textBox2.Text, OtelEkleFormu.textBox3.Text, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
-            }
-            else if (OtelEkleFormu.comboBox1.SelectedIndex == 3)
-            {
-                otels.Add(new TatilKöyüOtel(OtelEkleFormu.textBox1.Text, OtelEkleFormu.textBox2.Text, OtelEkleFormu.textBox3.Text, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked, OtelEkleFormu.checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
-            }
-        }
-        public void OtelSil(Otel otel)
+        public List<Oda> OdaEkleme(Otel otel)
         {
-
+            return new List<Oda>();
         }
-
-        public Otel Otel
+        
+        public List<Oda> OdaArama(Otel otel)
         {
-            get => default(Otel);
-            set
-            {
-            }
+            return new List<Oda>();
         }
+        //public override string ToString()
+        //{
+        //    return $"Otel Adı :{otel.getAd}Şehir :{otel.getSehir} Yıldız :{otel.getYildiz} Sauna: {otel.getSauna}";
+        //}
     }
-
-    public class Class1
-    {
-    }
+   
 }

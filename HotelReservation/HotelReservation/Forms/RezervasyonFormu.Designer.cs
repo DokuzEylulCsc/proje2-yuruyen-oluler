@@ -188,6 +188,7 @@
             this.Controls.Add(this.label1);
             this.Name = "RezervasyonFormu";
             this.Text = "RezervasyonFormu";
+            this.Load += new System.EventHandler(this.RezervasyonFormu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

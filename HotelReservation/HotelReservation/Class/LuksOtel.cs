@@ -15,17 +15,17 @@ namespace HotelReservation
 
         }
 
-        public override void OdaEkleme(Oda oda)
+        public override List<Oda> OdaEkleme(Otel otel)
         {
-
+            return new List<Oda>();
         }
-        public override void OdaSilme(Oda oda)
+        public override List<Oda> OdaSilme(Otel otel)
         {
-
+            return new List<Oda>();
         }
-        public override void OdaArama(Oda oda)
+        public override List<Oda> OdaArama(Otel otel)
         {
-
+            return new List<Oda>();
         }
     }
 }

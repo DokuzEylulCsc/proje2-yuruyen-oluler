@@ -86,15 +86,7 @@ namespace HotelReservation
                 return acikBufe;
             }
         }
-
-        internal Oda Oda
-        {
-            get => default(Oda);
-            set
-            {
-            }
-        }
-
+       
         public Otel(string ad,string sehir,string yildiz,bool sauna,bool acikBufe,bool spa,bool havuz,bool oyunParki,bool internet,bool sporSalonu)
         {
             this.yildiz = yildiz;
@@ -113,9 +105,18 @@ namespace HotelReservation
             this.sehir = sehir;
         }
         
-        public abstract void OdaEkleme(Oda oda);
-        public abstract void OdaSilme(Oda oda);
-        public abstract void OdaArama(Oda oda);
+        public abstract List<Oda> OdaEkleme(Otel otel);
+        public abstract List<Oda> OdaSilme(Otel otel);
+        public abstract List<Oda> OdaArama(Otel otel);
 
+        public string sehirismi()
+        {
+            return $"Şehir :{sehir}";
+        }
+
+        public override string ToString()
+        {
+            return $"Otel Adı :{ad}Şehir :{sehir} Yıldız :{yildiz} Sauna: {sauna}";
+        }
     }
 }

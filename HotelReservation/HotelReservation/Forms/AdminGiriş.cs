@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace HotelReservation.Forms
 {
-    public partial class OdaEkleFormu : Form
+    public partial class AdminGiriş : Form
     {
-        public OdaEkleFormu()
+        public AdminGiriş()
         {
             InitializeComponent();
         }
 
-        private void OdaEkleFormu_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            AdminPaneli adminPaneli = new AdminPaneli();
+            adminPaneli.Show(); this.Hide();
         }
     }
 }

@@ -16,5 +16,11 @@ namespace HotelReservation.Forms
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RezervasyonFormu rezervasyonFormu = new RezervasyonFormu();
+            rezervasyonFormu.Show(); this.Hide();
+        }
     }
 }

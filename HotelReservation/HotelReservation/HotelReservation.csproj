@@ -75,6 +75,12 @@
     <Compile Include="Class\Oda.cs" />
     <Compile Include="Class\Otel.cs" />
     <Compile Include="Class\PansiyonOtel.cs" />
+    <Compile Include="Forms\AdminGiriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminGiriş.Designer.cs">
+      <DependentUpon>AdminGiriş.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminPaneli.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     <Compile Include="Rezervasyon.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminGiriş.resx">
+      <DependentUpon>AdminGiriş.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminPaneli.resx">
       <DependentUpon>AdminPaneli.cs</DependentUpon>
