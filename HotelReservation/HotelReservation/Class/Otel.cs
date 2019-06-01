@@ -10,7 +10,7 @@ namespace HotelReservation
     {
         List<Oda> odaList = new List<Oda>();
         private string ad,yildiz,sehir;
-        private bool sauna,acikBufe,spa,havuz,internet,sporSalonu,oyunParki;
+        private bool sauna,acikBufe,spa,havuz,internet,sporSalonu,oyunParki;//otel oda sayısı eklenecek
         public string getAd
         {
             get

@@ -52,3 +52,6 @@ C:\Users\Zeynep\Desktop\Ödev için\proje2-yuruyen-oluler\HotelReservation\Hotel
 C:\Users\Zeynep\Desktop\Ödev için\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.csproj.CoreCompileInputs.cache
 C:\Users\Zeynep\Desktop\Ödev için\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.exe
 C:\Users\Zeynep\Desktop\Ödev için\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.pdb
+C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.AdminGiriş.resources
+C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.OdaEkleFormu.resources
+C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.OtelEkleFormu.resources

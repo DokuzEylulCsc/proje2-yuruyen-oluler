@@ -16,17 +16,33 @@ namespace HotelReservation.Forms
         {
             InitializeComponent();
         }
-
+       List<Kullanici> GetKullanici { get; } = new List<Kullanici>();
+        
         private void button1_Click(object sender, EventArgs e)
         {
-            KullanıcıGiriş kullanıcıGiriş = new KullanıcıGiriş();
-            kullanıcıGiriş.Show(); this.Hide();
+            
+            GetKullanici.Add(new Kullanici(textBox5.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text));
+            string[] a = { textBox5.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text };
+            var satir = new ListViewItem(a);
+            listView1.Items.Add(satir);
+           
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             AdminGiriş adminGiriş = new AdminGiriş();
             adminGiriş.Show(); this.Hide();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

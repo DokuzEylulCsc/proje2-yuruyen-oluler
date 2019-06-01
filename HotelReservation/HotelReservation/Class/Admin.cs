@@ -33,7 +33,7 @@ namespace HotelReservation
         public Forms.OtelEkleFormu OtelEkleFormu=new Forms.OtelEkleFormu();
         public static List<Otel> otels = new List<Otel>();
         public static List<string> sehir = new List<string>();
-        Otel otel;
+        
         //public void OtelEkle()
         //{
         //    if (OtelEkleFormu.comboBox1.SelectedIndex == 0)

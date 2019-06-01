@@ -6,9 +6,28 @@ using System.Threading.Tasks;
 
 namespace HotelReservation
 {
-    class Kullanici
+   public class Kullanici
     {
+        public Forms.KullanıcıKayıtFormu KullanıcıKayıtFormu = new Forms.KullanıcıKayıtFormu();
+        private static List<Kullanici> KullaniciList = new List<Kullanici>();
+        public List<Kullanici> GetKullaniciList
+        {
+            get
+            {
+                return KullaniciList;
+            }
+        }
+     
         private string id,adi,telno,mail;
+       
+        private string sifre;
+
+        public string  GetSifre
+        {
+            get { return sifre; }
+            set { sifre = value; }
+        }
+
         public string getId
         {
             get { return id; }
@@ -34,7 +53,7 @@ namespace HotelReservation
             }
         }
 
-        public Kullanici(string id,string adi, string telno, string mail)
+        public Kullanici(string id,string adi,string sifre, string telno, string mail)
         {
             this.id = id;
             this.adi = adi;
@@ -58,6 +77,7 @@ namespace HotelReservation
         {
             //Burada rez numarasına göre rezervasyon detayları verilcek.
         }
+
     }
 }
    
