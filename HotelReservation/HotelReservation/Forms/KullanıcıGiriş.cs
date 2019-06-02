@@ -19,8 +19,19 @@ namespace HotelReservation.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            RezervasyonFormu rezervasyonFormu = new RezervasyonFormu();
-            rezervasyonFormu.Show(); this.Hide();
+            foreach(Kullanici k in Kullanici.GetKullaniciList)
+            {
+                MessageBox.Show(k.getadi, k.GetSifre);
+                if (textBox2.Text==k.getadi&& textBox3.Text == k.GetSifre)
+                {
+                    RezervasyonFormu rezervasyonFormu = new RezervasyonFormu();
+                    rezervasyonFormu.Show(); this.Hide();
+
+                }
+               
+            }
+           
+            
         }
     }
 }

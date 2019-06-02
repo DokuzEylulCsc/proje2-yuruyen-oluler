@@ -25,6 +25,8 @@ namespace HotelReservation.Forms
             string[] a = { textBox5.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text };
             var satir = new ListViewItem(a);
             listView1.Items.Add(satir);
+            KullanıcıGiriş kullanici = new KullanıcıGiriş();
+            
             KullanıcıGiriş kullanıcıGiriş = new KullanıcıGiriş();
             kullanıcıGiriş.Show(); this.Hide();
 

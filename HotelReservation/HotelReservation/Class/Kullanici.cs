@@ -10,7 +10,7 @@ namespace HotelReservation
     {
         public Forms.KullanıcıKayıtFormu KullanıcıKayıtFormu = new Forms.KullanıcıKayıtFormu();
         private static List<Kullanici> KullaniciList = new List<Kullanici>();
-        public List<Kullanici> GetKullaniciList
+        public static List<Kullanici> GetKullaniciList
         {
             get
             {
@@ -32,7 +32,7 @@ namespace HotelReservation
         {
             get { return id; }
         }
-        public string getid
+        public string getadi
         {
             get { return adi; }
         }

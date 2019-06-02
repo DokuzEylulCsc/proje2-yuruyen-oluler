@@ -51,6 +51,7 @@ namespace HotelReservation.Forms
             RezervasyonFormu rezervasyon = new RezervasyonFormu();
             rezervasyon.SetAllCity(otels); //https://stackoverflow.com/questions/20441019/how-to-access-list-from-another-form
             rezervasyon.Show();
+            
         }
 
         private void OtelEkleFormu_Load(object sender, EventArgs e)

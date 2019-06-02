@@ -47,26 +47,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 51);
+            this.label1.Location = new System.Drawing.Point(22, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 17);
+            this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Şehir";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(143, 48);
+            this.comboBox1.Location = new System.Drawing.Point(107, 39);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 111);
+            this.label2.Location = new System.Drawing.Point(22, 90);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 17);
+            this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Yıldız Sayısı";
             // 
@@ -79,33 +82,37 @@
             "3",
             "4",
             "5"});
-            this.comboBox2.Location = new System.Drawing.Point(143, 104);
+            this.comboBox2.Location = new System.Drawing.Point(107, 84);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.Size = new System.Drawing.Size(92, 21);
             this.comboBox2.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 216);
+            this.label3.Location = new System.Drawing.Point(22, 176);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 17);
+            this.label3.Size = new System.Drawing.Size(82, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "Maksimum Fiyat";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(143, 213);
+            this.textBox1.Location = new System.Drawing.Point(107, 173);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 22);
+            this.textBox1.Size = new System.Drawing.Size(92, 20);
             this.textBox1.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 165);
+            this.label4.Location = new System.Drawing.Point(22, 134);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 17);
+            this.label4.Size = new System.Drawing.Size(51, 13);
             this.label4.TabIndex = 0;
             this.label4.Text = "Otel Türü";
             // 
@@ -117,43 +124,48 @@
             "Butik Otel",
             "Tatil Köyü Otel",
             "Lüks Otel"});
-            this.comboBox3.Location = new System.Drawing.Point(143, 158);
+            this.comboBox3.Location = new System.Drawing.Point(107, 128);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 24);
+            this.comboBox3.Size = new System.Drawing.Size(92, 21);
             this.comboBox3.TabIndex = 1;
             // 
             // checkedListBox1
             // 
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(32, 272);
+            this.checkedListBox1.Location = new System.Drawing.Point(24, 221);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(232, 140);
+            this.checkedListBox1.Size = new System.Drawing.Size(175, 109);
             this.checkedListBox1.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(329, 93);
+            this.button1.Location = new System.Drawing.Point(247, 76);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 89);
+            this.button1.Size = new System.Drawing.Size(79, 72);
             this.button1.TabIndex = 4;
             this.button1.Text = "Uygun Otelleri Getir";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(465, 48);
+            this.listBox1.Location = new System.Drawing.Point(349, 39);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(493, 580);
+            this.listBox1.Size = new System.Drawing.Size(371, 472);
             this.listBox1.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(29, 447);
+            this.label5.Location = new System.Drawing.Point(22, 363);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 17);
+            this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "Oda Türü";
             // 
@@ -165,24 +177,26 @@
             "İki Kişilik",
             "Tek Kişilik",
             "Üç Kişilik"});
-            this.comboBox4.Location = new System.Drawing.Point(143, 444);
+            this.comboBox4.Location = new System.Drawing.Point(107, 361);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 24);
+            this.comboBox4.Size = new System.Drawing.Size(92, 21);
             this.comboBox4.TabIndex = 1;
             // 
             // checkedListBox2
             // 
             this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Location = new System.Drawing.Point(32, 491);
+            this.checkedListBox2.Location = new System.Drawing.Point(24, 399);
+            this.checkedListBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(232, 140);
+            this.checkedListBox2.Size = new System.Drawing.Size(175, 109);
             this.checkedListBox2.TabIndex = 3;
             // 
             // RezervasyonFormu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1322, 699);
+            this.ClientSize = new System.Drawing.Size(992, 568);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkedListBox2);
@@ -197,6 +211,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "RezervasyonFormu";
             this.Text = "RezervasyonFormu";
             this.Load += new System.EventHandler(this.RezervasyonFormu_Load);
