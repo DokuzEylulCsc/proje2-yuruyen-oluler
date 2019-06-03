@@ -16,12 +16,16 @@ namespace HotelReservation.Forms
         {
             InitializeComponent();
         }
-       List<Kullanici> GetKullanici { get; } = new List<Kullanici>();
-        
+        private static List<Kullanici> kullanicis = new List<Kullanici>();
+        public static List<Kullanici> GetKullanici
+        {
+            get { return kullanicis ; }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             
-            GetKullanici.Add(new Kullanici(textBox5.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text));
+            kullanicis.Add(new Kullanici(textBox5.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text));
             string[] a = { textBox5.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text };
             var satir = new ListViewItem(a);
             listView1.Items.Add(satir);
