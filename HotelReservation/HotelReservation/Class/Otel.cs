@@ -10,6 +10,7 @@ namespace HotelReservation
     {
         
         private string ad,yildiz,sehir;
+        private int id;
         private bool sauna,acikBufe,spa,havuz,internet,sporSalonu,oyunParki;
         public List<Oda> Odalar { get; set; }
         public Otel()
@@ -91,9 +92,12 @@ namespace HotelReservation
                 return acikBufe;
             }
         }
-       
-        public Otel(string ad,string sehir,string yildiz,bool sauna,bool acikBufe,bool spa,bool havuz,bool oyunParki,bool internet,bool sporSalonu)
+
+        public int Id { get => id; set => id = value; }
+
+        public Otel(int id,string ad,string sehir,string yildiz,bool sauna,bool acikBufe,bool spa,bool havuz,bool oyunParki,bool internet,bool sporSalonu)
         {
+            this.id = id;
             this.yildiz = yildiz;
             this.ad = ad;
             this.sehir = sehir;
@@ -118,6 +122,10 @@ namespace HotelReservation
         public string sehirismi()
         {
             return $"{sehir}";
+        }
+        public string otelad() //Oda eklemede oteli seçmek için
+        {
+            return $"{ad}";
         }
 
         public override string ToString()

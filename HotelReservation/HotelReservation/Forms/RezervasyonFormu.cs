@@ -16,13 +16,13 @@ namespace HotelReservation.Forms
         {
             InitializeComponent();
         }
-        public void SetAllCity(List<Otel> input)//https://stackoverflow.com/questions/20441019/how-to-access-list-from-another-form
-        {
-            foreach (Otel s in input)
-            {
-                comboBox1.Items.Add(s.sehirismi());
-            }
-        }
+        //public void SetAllCity(List<Otel> input)//https://stackoverflow.com/questions/20441019/how-to-access-list-from-another-form
+        //{
+        //    foreach (Otel s in input)
+        //    {
+        //        comboBox1.Items.Add(s.sehirismi());
+        //    }
+        //}
         private static List<Otel> otels = new List<Otel>();
         public static List<Otel> GetOtels
         {
