@@ -6,29 +6,24 @@ using System.Threading.Tasks;
 
 namespace HotelReservation
 {
-    class Rezervasyon
+     public class Rezervasyon
         
     {
         private string id;
-        private DateTime gelistarihi, donustarihi;
+        public Kullanici kullanici { get; set; }
+        public decimal Fiyat { get; set; }
+       
         public string getId
         {
             get { return id; }
         }
-        public DateTime getgelistarihi
-        {
-            get { return getgelistarihi; }
-        }
-        public DateTime getdonustarihi
-        {
-            get { return getdonustarihi; }
-        }
+      
 
-        public Rezervasyon(string id, DateTime gelistarihi, DateTime donustarihi)
+        public Rezervasyon(string id,Kullanici kullanici,decimal Fiyat)
         {
-            this.gelistarihi = gelistarihi;
-            this.donustarihi = donustarihi;
             this.id = id;
+            this.kullanici = kullanici;
+            this.Fiyat = Fiyat;
 
 
         }

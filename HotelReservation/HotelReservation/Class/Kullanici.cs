@@ -10,6 +10,20 @@ namespace HotelReservation
     {
         public Forms.KullanıcıKayıtFormu KullanıcıKayıtFormu = new Forms.KullanıcıKayıtFormu();
         private static List<Kullanici> KullaniciList = new List<Kullanici>();
+        public List<Rezervasyon> Rezervasyonlar { get; set; }//1 Kişi birden fazla rezervasyon yapabilir.
+        private DateTime gelistarihi, donustarihi;
+        public DateTime getgelistarihi
+        {
+            get { return getgelistarihi; }
+        }
+        public DateTime getdonustarihi
+        {
+            get { return getdonustarihi; }
+        }
+        public Kullanici()
+        {
+            Rezervasyonlar = new List<Rezervasyon>();
+        }
         public static List<Kullanici> GetKullaniciList
         {
             get
@@ -53,12 +67,15 @@ namespace HotelReservation
             }
         }
 
-        public Kullanici(string id,string adi,string sifre, string telno, string mail)
+        public Kullanici(string id,string adi,string sifre, string telno, string mail,DateTime gelistarihi,DateTime donustarihi)
         {
             this.id = id;
             this.adi = adi;
             this.mail = mail;
             this.telno = telno;
+
+            this.gelistarihi = gelistarihi;
+            this.donustarihi = donustarihi;
 
         }
         public void rezervasyonYap()

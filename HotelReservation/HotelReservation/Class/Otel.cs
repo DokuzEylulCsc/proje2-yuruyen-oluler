@@ -8,9 +8,14 @@ namespace HotelReservation
 {
   public abstract class Otel
     {
-        List<Oda> odaList = new List<Oda>();
+        
         private string ad,yildiz,sehir;
-        private bool sauna,acikBufe,spa,havuz,internet,sporSalonu,oyunParki;//otel oda sayısı eklenecek
+        private bool sauna,acikBufe,spa,havuz,internet,sporSalonu,oyunParki;
+        public List<Oda> Odalar { get; set; }
+        public Otel()
+        {
+            Odalar = new List<Oda>();
+        }
         public string getAd
         {
             get

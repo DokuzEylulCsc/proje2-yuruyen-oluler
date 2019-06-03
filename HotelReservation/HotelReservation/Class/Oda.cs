@@ -15,7 +15,19 @@ namespace HotelReservation
         public OdaDurumu OdaDurumu
         {
             get { return odadurum; }
-            set { odadurum = value; }
+            set {
+                switch (value)
+                {
+                    case OdaDurumu.Bos:
+                        break;
+                    case OdaDurumu.Dolu:
+                        break;
+                    case OdaDurumu.Tadilatta:
+                        break;
+                    default:
+                        break;
+                }
+            }
         }
 
         public string getId
