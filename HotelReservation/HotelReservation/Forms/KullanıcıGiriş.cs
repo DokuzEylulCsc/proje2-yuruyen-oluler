@@ -21,7 +21,7 @@ namespace HotelReservation.Forms
         {
             foreach(Kullanici k in Kullanici.GetKullaniciList)
             {
-                MessageBox.Show(k.getadi, k.GetSifre);
+                
                 if (textBox2.Text==k.getadi&& textBox3.Text == k.GetSifre)
                 {
                     RezervasyonFormu rezervasyonFormu = new RezervasyonFormu();
@@ -32,6 +32,12 @@ namespace HotelReservation.Forms
             }
            
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            KullanıcıKayıtFormu kullanıcıKayıtFormu = new KullanıcıKayıtFormu();
+            kullanıcıKayıtFormu.Show(); this.Hide();
         }
     }
 }
