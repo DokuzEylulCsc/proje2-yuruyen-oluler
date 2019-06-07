@@ -1,0 +1,29 @@
+Otel Adı: Anemon  Şehir: İzmir Yıldız: 5 Sauna: True Spa: True AçıkBüfe: True Havuz: True OyunParkı True İnternet: True SporSalonu: True
+Otel Adı: Akra  Şehir: Antalya Yıldız: 5 Sauna: True Spa: True AçıkBüfe: True Havuz: True OyunParkı True İnternet: True SporSalonu: True
+Otel Adı: İnci Class  Şehir: İzmir Yıldız: 4 Sauna: True Spa: True AçıkBüfe: True Havuz: True OyunParkı False İnternet: True SporSalonu: True
+Otel Adı: Rixos  Şehir: Antalya Yıldız: 5 Sauna: True Spa: True AçıkBüfe: True Havuz: True OyunParkı True İnternet: True SporSalonu: True
+Otel Adı: Asteria Kremlin  Şehir: Antalya Yıldız: 5 Sauna: True Spa: True AçıkBüfe: True Havuz: True OyunParkı False İnternet: True SporSalonu: True
+Otel Adı: Lara Bulut  Şehir: Antalya Yıldız: 5 Sauna: True Spa: True AçıkBüfe: True Havuz: True OyunParkı False İnternet: True SporSalonu: True
+Otel Adı: Delphin Diva  Şehir: Antalya Yıldız: 5 Sauna: True Spa: True AçıkBüfe: True Havuz: True OyunParkı True İnternet: True SporSalonu: True
+Otel Adı: Swiss Otel  Şehir: İzmir Yıldız: 5 Sauna: True Spa: True AçıkBüfe: True Havuz: True OyunParkı True İnternet: True SporSalonu: True
+Otel Adı: Hilton  Şehir: İzmir Yıldız: 4 Sauna: False Spa: True AçıkBüfe: True Havuz: True OyunParkı True İnternet: True SporSalonu: True
+Otel Adı: Key  Şehir: İzmir Yıldız: 5 Sauna: True Spa: True AçıkBüfe: True Havuz: True OyunParkı True İnternet: True SporSalonu: True
+Otel Adı: Wyndham Grand  Şehir: İzmir Yıldız: 5 Sauna: True Spa: True AçıkBüfe: True Havuz: True OyunParkı True İnternet: True SporSalonu: True
+Otel Adı: Crowne Plaza  Şehir: İzmir Yıldız: 5 Sauna: True Spa: True AçıkBüfe: True Havuz: True OyunParkı False İnternet: True SporSalonu: True
+Otel Adı: Otantik Butik Otel  Şehir: Antalya Yıldız: 4 Sauna: False Spa: False AçıkBüfe: True Havuz: True OyunParkı False İnternet: True SporSalonu: False
+Otel Adı: La Porte Boutique Hotel  Şehir: Antalya Yıldız: 4 Sauna: False Spa: False AçıkBüfe: True Havuz: True OyunParkı False İnternet: True SporSalonu: False
+Otel Adı: Let'stay Boutique Hotel  Şehir: Antalya Yıldız: 4 Sauna: True Spa: False AçıkBüfe: True Havuz: True OyunParkı False İnternet: True SporSalonu: False
+Otel Adı: Sedir Palas Butik Otel  Şehir: Antalya Yıldız: 3 Sauna: False Spa: False AçıkBüfe: True Havuz: False OyunParkı False İnternet: True SporSalonu: False
+Otel Adı: Kırlançe Butik Otel  Şehir: İzmir Yıldız: 3 Sauna: False Spa: False AçıkBüfe: True Havuz: False OyunParkı False İnternet: True SporSalonu: False
+Otel Adı: Viva La Vita Butik Otel  Şehir: İzmir Yıldız: 4 Sauna: False Spa: False AçıkBüfe: True Havuz: True OyunParkı False İnternet: True SporSalonu: False
+Otel Adı: Casa Bella Hotel   Şehir: İzmir Yıldız: 5 Sauna: False Spa: True AçıkBüfe: True Havuz: True OyunParkı False İnternet: True SporSalonu: False
+Otel Adı: Deniz Pansiyon  Şehir: İzmir Yıldız: 2 Sauna: False Spa: False AçıkBüfe: False Havuz: False OyunParkı False İnternet: True SporSalonu: False
+Otel Adı: Kalispera Pansiyon  Şehir: İzmir Yıldız: 2 Sauna: False Spa: False AçıkBüfe: False Havuz: False OyunParkı False İnternet: True SporSalonu: False
+Otel Adı: Şirincem Pension  Şehir: İzmir Yıldız: 2 Sauna: False Spa: False AçıkBüfe: False Havuz: False OyunParkı False İnternet: True SporSalonu: False
+Otel Adı: Altaris Pansiyon Olympos  Şehir: Antalya Yıldız: 2 Sauna: False Spa: False AçıkBüfe: False Havuz: False OyunParkı False İnternet: True SporSalonu: False
+Otel Adı: Hane-i Keyif Pansiyon  Şehir: Antalya Yıldız: 2 Sauna: False Spa: False AçıkBüfe: False Havuz: False OyunParkı False İnternet: True SporSalonu: False
+Otel Adı: Olympos Çamlık Pansiyon  Şehir: Antalya Yıldız: 2 Sauna: False Spa: False AçıkBüfe: False Havuz: False OyunParkı False İnternet: True SporSalonu: False
+Otel Adı: Zigana Yayla Tatil Köyü  Şehir: Trabzon Yıldız: 4 Sauna: False Spa: False AçıkBüfe: True Havuz: False OyunParkı True İnternet: True SporSalonu: False
+Otel Adı: Zigana Gümüşkayak Yaylakent  Şehir: Trabzon Yıldız: 4 Sauna: False Spa: False AçıkBüfe: True Havuz: False OyunParkı True İnternet: True SporSalonu: False
+Otel Adı: Konak Palas Hotel  Şehir: Trabzon Yıldız: 3 Sauna: False Spa: False AçıkBüfe: True Havuz: False OyunParkı True İnternet: True SporSalonu: False
+Otel Adı: Hamsikoy  Şehir: Trabzon Yıldız: 3 Sauna: False Spa: False AçıkBüfe: True Havuz: False OyunParkı True İnternet: True SporSalonu: False

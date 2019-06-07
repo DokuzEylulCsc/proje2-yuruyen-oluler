@@ -8,8 +8,7 @@ namespace HotelReservation
 {
     class İkiKisilikOda : Oda
     {
-        public İkiKisilikOda(string id, string fiyat, bool miniBar, bool jakuzi, bool denizManzara, bool tv) : base(id, fiyat, miniBar, jakuzi, denizManzara,
-          tv)
+        public İkiKisilikOda(int OtelId, int OdaId, int fiyat, bool miniBar, bool jakuzi, bool denizManzara, bool tv) : base(OtelId, OdaId, fiyat, miniBar, jakuzi, denizManzara, tv)
         {
 
         }

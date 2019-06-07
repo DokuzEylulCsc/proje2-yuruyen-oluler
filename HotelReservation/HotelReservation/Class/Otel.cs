@@ -12,125 +12,40 @@ namespace HotelReservation
         private string ad,yildiz,sehir;
         private int id;
         private bool sauna,acikBufe,spa,havuz,internet,sporSalonu,oyunParki;
-        public List<Oda> Odalar { get; set; }
+       
         public Otel()
         {
             Odalar = new List<Oda>();
         }
-        public string getAd
-        {
-            get
-            {
-                return ad;
-
-            }
-        }
-        public string getSehir
-        {
-            get
-            {
-                return sehir;
-
-            }
-        }
-        public string getYildiz
-        {
-            get
-            {
-                return yildiz;
-            }
-        }
-        public bool getInternet
-        {
-            get
-            {
-                return internet;
-            }
-        }
-
-        public bool getSporSalonu
-        {
-            get
-            {
-                return sporSalonu;
-            }
-        }
-
-        public bool getOyunPark
-        {
-            get
-            {
-                return oyunParki;
-            }
-        }
-
-        public bool getSauna
-        {
-            get
-            {
-                return sauna;
-            }
-        }
-        public bool getSpa
-        {
-            get
-            {
-                return spa;
-            }
-        }
-        public bool getHavuz
-        {
-            get
-            {
-                return havuz;
-            }
-        }
-        public bool getacikBufe
-        {
-            get
-            {
-                return acikBufe;
-            }
-        }
+        private List<Oda> odalar = new List<Oda>();
 
         public int Id { get => id; set => id = value; }
+        public string Ad { get => ad; set => ad = value; }
+        public string Yildiz { get => yildiz; set => yildiz = value; }
+        public string Sehir { get => sehir; set => sehir = value; }
+        public bool Sauna { get => sauna; set => sauna = value; }
+        public bool AcikBufe { get => acikBufe; set => acikBufe = value; }
+        public bool Spa { get => spa; set => spa = value; }
+        public bool Havuz { get => havuz; set => havuz = value; }
+        public bool Internet { get => internet; set => internet = value; }
+        public bool SporSalonu { get => sporSalonu; set => sporSalonu = value; }
+        public bool OyunParki { get => oyunParki; set => oyunParki = value; }
+        public List<Oda> Odalar { get => odalar; set => odalar = value; }
 
         public Otel(int id,string ad,string sehir,string yildiz,bool sauna,bool acikBufe,bool spa,bool havuz,bool oyunParki,bool internet,bool sporSalonu)
         {
             this.id = id;
-            this.yildiz = yildiz;
-            this.ad = ad;
-            this.sehir = sehir;
-            this.sauna = sauna;
-            this.spa = spa;
-            this.acikBufe = acikBufe;
-            this.havuz = havuz;
-            this.oyunParki = oyunParki;
-            this.internet = internet;
-            this.sporSalonu = sporSalonu;
+            this.Yildiz = yildiz;
+            this.Ad = ad;
+            this.Sehir = sehir;
+            this.Sauna = sauna;
+            this.Spa = spa;
+            this.AcikBufe = acikBufe;
+            this.Havuz = havuz;
+            this.OyunParki = oyunParki;
+            this.Internet = internet;
+            this.SporSalonu = sporSalonu;
         }
-        public Otel(string ad,string sehir)//Admin classında Bilgileri göster için
-        {
-            this.ad = ad;
-            this.sehir = sehir;
-        }
-        
-        public abstract List<Oda> OdaEkleme(Otel otel);
-        public abstract List<Oda> OdaSilme(Otel otel);
-        public abstract List<Oda> OdaArama(Otel otel);
-
-        public string sehirismi()
-        {
-            return $"{sehir}";
-        }
-        public string otelad() //Oda eklemede oteli seçmek için
-        {
-            return $"{ad}";
-        }
-
-        public override string ToString()
-        {
-            return $"Otel Adı :{ad} Şehir :{sehir} Yıldız :{yildiz} Sauna: {sauna} Spa: {spa} Açık Büfe: {acikBufe} Havuz: {havuz} Oyun Parkı {oyunParki} İnternet: {internet} Spor Salonu: {sporSalonu}";
-        }
+     
     }
 }

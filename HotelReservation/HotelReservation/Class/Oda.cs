@@ -8,7 +8,7 @@ namespace HotelReservation
 {
     public abstract class Oda
     {
-        private string id,fiyat;
+        private int otelId,odaId,fiyat;
         private bool miniBar,tv,jakuzi,denizManzara;
         private OdaDurumu odadurum;
 
@@ -30,69 +30,42 @@ namespace HotelReservation
             }
         }
 
-        public string getId
+        public bool MiniBar { get => miniBar; set => miniBar = value; }
+        public bool Tv { get => tv; set => tv = value; }
+        public bool Jakuzi { get => jakuzi; set => jakuzi = value; }
+        public bool DenizManzara { get => denizManzara; set => denizManzara = value; }
+        public int OtelId { get => otelId; set => otelId = value; }
+        public int OdaId { get => odaId; set => odaId = value; }
+        public int Fiyat { get => fiyat; set => fiyat = value; }
+
+        public Oda(int OdaId)
         {
-            get
-            {
-                return id;
-            }
+            this.OdaId = odaId;
         }
 
-        public string getFiyat
+        protected Oda(OdaDurumu odaDurumu, bool miniBar, bool tv)
         {
-            get
-            {
-                return fiyat;
-            }
+            OdaDurumu = odaDurumu;
+            MiniBar = miniBar;
+            Tv = tv;
         }
 
-        public bool getminiBar
+        public Oda(int otelId,int odaId, int fiyat, bool miniBar,bool jakuzi,bool denizManzara,bool tv)
         {
-            get
-            {
-                return miniBar;
-            }
+            OdaId = odaId;
+            OtelId = otelId;
+            this.Fiyat = fiyat;
+            this.MiniBar = miniBar;
+            this.Jakuzi = jakuzi;
+            this.DenizManzara = denizManzara;
+            Tv = tv;
         }
 
-        public bool getTv
-        {
-            get
-            {
-                return tv;
-            }
-        }
-        public bool getJakuzi
-        {
-            get
-            {
-                return jakuzi;
-            }
-        }
-        public bool getDenizManzara
-        {
-            get
-            {
-                return denizManzara;
-            }
-        }
 
-        public Oda(string id)
+        public string oda()
         {
-            this.id = id;
-        }
-
-        public Oda(string id, string fiyat, bool miniBar,bool jakuzi,bool denizManzara,bool tv)
-        {
-            this.id = id;
-            this.fiyat = fiyat;
-            this.miniBar = miniBar;
-            this.jakuzi = jakuzi;
-            this.denizManzara = denizManzara;
-            this.tv = tv;
-        }
-       
-
-
+            return $"{OdaId} {Fiyat} {MiniBar} {Jakuzi} {DenizManzara} {Tv}";
+           }
     }
     public enum OdaDurumu //Odanın durumları sabit olacağından enum tanımladım. Daha sonra verilere GetNames metodu ile ulaşabiliriz.
         // Eğer enum tanımlamasaydım property olarak direk tanımlasaydım verilere ulaşmak için Oda.Method adı yazmak zorunda olcaktım 
@@ -102,4 +75,6 @@ namespace HotelReservation
         Dolu,
         Tadilatta,
     }
+
+   
 }

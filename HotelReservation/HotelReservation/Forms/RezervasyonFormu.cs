@@ -32,7 +32,7 @@ namespace HotelReservation.Forms
         {
             foreach (Otel otel in GetOtels)
             {
-                    comboBox1.Items.Add(otel.sehirismi());
+                    comboBox1.Items.Add(otel.Sehir);
             }
             
         }
