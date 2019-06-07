@@ -21,21 +21,21 @@ namespace HotelReservation.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             
-            GetKullanici.Add(new Kullanici(textBox5.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text));
+            GetKullanici.Add(new Kullanici(Int32.Parse(textBox5.Text), textBox1.Text, textBox2.Text,Int32.Parse(textBox3.Text), textBox4.Text));
             string[] a = { textBox5.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text };
             var satir = new ListViewItem(a);
             listView1.Items.Add(satir);
+
             KullanıcıGiriş kullanıcıGiriş = new KullanıcıGiriş();
-            kullanıcıGiriş.Show(); this.Hide();
-
-
-
+            kullanıcıGiriş.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             AdminGiriş adminGiriş = new AdminGiriş();
-            adminGiriş.Show(); this.Hide();
+            adminGiriş.Show();
+            this.Hide();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)

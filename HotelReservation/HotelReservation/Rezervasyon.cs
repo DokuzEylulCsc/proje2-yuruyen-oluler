@@ -9,32 +9,18 @@ namespace HotelReservation
      public class Rezervasyon
         
     {
-        private string id;
-        public Kullanici kullanici { get; set; }
-        public decimal Fiyat { get; set; }
+        private int id;
+        public int Id { get => id; set => id = value; }
+        public DateTime Gelistarihi { get => gelistarihi; set => gelistarihi = value; }
+        public DateTime Donustarihi { get => donustarihi; set => donustarihi = value; }
+
         private DateTime gelistarihi, donustarihi;
-        public DateTime getgelistarihi
-        {
-            get { return getgelistarihi; }
-        }
-        public DateTime getdonustarihi
-        {
-            get { return getdonustarihi; }
-        }
-
-        public string getId
-        {
-            get { return id; }
-        }
       
-
-        public Rezervasyon(string id,Kullanici kullanici,decimal Fiyat,DateTime gelistarihi,DateTime donustarihi)
+        public Rezervasyon(int id,DateTime gelistarihi,DateTime donustarihi)
         {
-            this.id = id;
-            this.kullanici = kullanici;
-            this.Fiyat = Fiyat;
-            this.gelistarihi = gelistarihi;
-            this.donustarihi = donustarihi;
+            this.Id = id;
+            this.Gelistarihi = gelistarihi;
+            this.Donustarihi = donustarihi;
 
 
         }

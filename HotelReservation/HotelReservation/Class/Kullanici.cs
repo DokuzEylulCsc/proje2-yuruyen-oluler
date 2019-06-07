@@ -24,49 +24,23 @@ namespace HotelReservation
             }
         }
 
-     
-        private string id,adi,telno,mail;
-       
+        private int id, telNo;
+        private string adi,mail;
         private string sifre;
+        public int Id { get => id; set => id = value; }
+        public int TelNo { get => telNo; set => telNo = value; }
+        public string Adi { get => adi; set => adi = value; }
+        public string Mail { get => mail; set => mail = value; }
+        public string Sifre { get => sifre; set => sifre = value; }
 
-        public string  GetSifre
+        public Kullanici(int id,string adi,string sifre, int telno, string mail)
         {
-            get { return sifre; }
-            set { sifre = value; }
-        }
-
-        public string getId
-        {
-            get { return id; }
-        }
-        public string getadi
-        {
-            get { return adi; }
-        }
-        public string getTelNo
-        {
-            get { return telno; }
-        }
-        public string getMail
-        {
-            get { return mail; }
-        }
-
-        internal Rezervasyon Rezervasyon
-        {
-            get => default(Rezervasyon);
-            set
-            {
-            }
-        }
-
-        public Kullanici(string id,string adi,string sifre, string telno, string mail)
-        {
-            this.id = id;
-            this.adi = adi;
-            this.mail = mail;
-            this.telno = telno;
-            
+            this.Id = id;
+            this.Adi = adi;
+            this.Mail = mail;
+            this.TelNo = telno;
+            this.Sifre = sifre;
+            Rezervasyonlar = new List<Rezervasyon>();
 
         }
         public void rezervasyonYap()

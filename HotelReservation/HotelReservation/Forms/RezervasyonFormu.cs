@@ -30,7 +30,7 @@ namespace HotelReservation.Forms
         }
         private void RezervasyonFormu_Load(object sender, EventArgs e)
         {
-            foreach (Otel otel in GetOtels)
+            foreach (Otel otel in otels)
             {
                     comboBox1.Items.Add(otel.Sehir);
             }
