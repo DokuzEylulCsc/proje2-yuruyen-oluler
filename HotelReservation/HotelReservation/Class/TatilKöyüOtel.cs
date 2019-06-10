@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HotelReservation
 {
-    class TatilKöyüOtel : Otel
+    class TatilKöyüOtel : Otel , IOtel
     {
         public TatilKöyüOtel(int id,string ad, string sehir, string yildiz, bool sauna, bool acikbufe, bool spa, bool havuz, bool oyunParki, bool internet, bool sporSalonu) : base(id, ad, sehir, yildiz, sauna, acikbufe, spa, havuz, oyunParki, internet, sporSalonu)
         {

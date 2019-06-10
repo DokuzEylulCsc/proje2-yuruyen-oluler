@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "$type": "HotelReservation.LuksOtel, HotelReservation",
     "Id": 1,
@@ -433,5 +433,32 @@
     "SporSalonu": false,
     "OyunParki": true,
     "Odalar": null
+  },
+  {
+    "$type": "HotelReservation.LuksOtel, HotelReservation",
+    "Id": 98,
+    "Ad": "Krem",
+    "Yildiz": "4",
+    "Sehir": "İzmir",
+    "Sauna": true,
+    "AcikBufe": true,
+    "Spa": true,
+    "Havuz": true,
+    "Internet": true,
+    "SporSalonu": true,
+    "OyunParki": true,
+    "Odalar": [
+      {
+        "$type": "HotelReservation.İkiKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": true,
+        "OtelId": 98,
+        "OdaId": 123,
+        "Fiyat": 560
+      }
+    ]
   }
 ]

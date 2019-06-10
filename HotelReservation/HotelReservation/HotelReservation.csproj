@@ -132,6 +132,9 @@
     <Compile Include="Forms\RezervasyonFormu.Designer.cs">
       <DependentUpon>RezervasyonFormu.cs</DependentUpon>
     </Compile>
+    <Compile Include="IOtel.cs" />
+    <Compile Include="IOtelFactory.cs" />
+    <Compile Include="OtelFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Class\TatilKöyüOtel.cs" />

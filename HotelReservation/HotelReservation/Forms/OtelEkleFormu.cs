@@ -12,35 +12,64 @@ using System.Windows.Forms;
 
 namespace HotelReservation.Forms
 {
-    public partial class OtelEkleFormu : Form
+    public partial class OtelEkleFormu : Form , IOtelFactory
     {
         public OtelEkleFormu()
         {
             InitializeComponent();
         }
       
+
         private static List<Otel> otels = new List<Otel>();
         public static List<Otel> GetOtels
         {
             get { return otels; }
         }
+
+        public IOtel ProduceOtel(OtelType type)
+        {
+            IOtel otel = null;
+            switch (type)
+            {
+                case OtelType.ButikOtel:
+                    otel = new ButikOtel(int.Parse(textBox4.Text), textBox1.Text, textBox2.Text, textBox3.Text, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked);
+                    break;
+                case OtelType.LuksOtel:
+                    otel = new LuksOtel(int.Parse(textBox4.Text), textBox1.Text, textBox2.Text, textBox3.Text, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked);
+                    break;
+                case OtelType.PansiyonOtel:
+                    otel = new PansiyonOtel(int.Parse(textBox4.Text), textBox1.Text, textBox2.Text, textBox3.Text, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked);
+                    break;
+                case OtelType.TatilKöyüOtel:
+                    otel = new TatilKöyüOtel(int.Parse(textBox4.Text), textBox1.Text, textBox2.Text, textBox3.Text, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked);
+                    break;
+            }
+            return otel;
+        
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
+         
             if (comboBox1.SelectedIndex == 0)
             {
-                otels.Add(new ButikOtel(int.Parse(textBox4.Text), textBox1.Text, textBox2.Text, textBox3.Text, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
+                IOtel otelButik = ProduceOtel(OtelType.ButikOtel);
+                otels.Add((Otel)otelButik);
             }
-            else if ( comboBox1.SelectedIndex == 1)
+            else if (comboBox1.SelectedIndex == 1)
             {
-                otels.Add(new LuksOtel(int.Parse(textBox4.Text), textBox1.Text,  textBox2.Text,  textBox3.Text,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
+                IOtel otelLuks = ProduceOtel(OtelType.LuksOtel);
+                otels.Add((Otel)otelLuks);
             }
-            else if ( comboBox1.SelectedIndex == 2)
+            else if (comboBox1.SelectedIndex == 2)
             {
-                otels.Add(new PansiyonOtel(int.Parse(textBox4.Text), textBox1.Text,  textBox2.Text,  textBox3.Text,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
+                IOtel otelPansiyon = ProduceOtel(OtelType.PansiyonOtel);
+                otels.Add((Otel)otelPansiyon);
             }
-            else if ( comboBox1.SelectedIndex == 3)
+            else if (comboBox1.SelectedIndex == 3)
             {
-                otels.Add(new TatilKöyüOtel(int.Parse(textBox4.Text), textBox1.Text,  textBox2.Text,  textBox3.Text,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked,  checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
+                IOtel otelTatil = ProduceOtel(OtelType.TatilKöyüOtel);
+                otels.Add((Otel)otelTatil);
             }
             listBox1.Items.Clear();
 

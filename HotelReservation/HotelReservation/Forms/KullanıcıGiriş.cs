@@ -22,7 +22,7 @@ namespace HotelReservation.Forms
             foreach(Kullanici k in Kullanici.GetKullaniciList)
             {
                 
-                if (textBox2.Text==k.getadi&& textBox3.Text == k.GetSifre)
+                if (textBox2.Text==k.Adi&& textBox3.Text == k.Sifre)
                 {
                     RezervasyonFormu rezervasyonFormu = new RezervasyonFormu();
                     rezervasyonFormu.Show(); this.Hide();
