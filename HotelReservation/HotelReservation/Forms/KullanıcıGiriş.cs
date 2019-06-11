@@ -16,7 +16,16 @@ namespace HotelReservation.Forms
         {
             InitializeComponent();
         }
-       
+        private static List<Kullanici> kullanicis;
+
+        public static List<Kullanici> Kullanicis { get => kullanicis; set => kullanicis = value; }
+
+        public KullanıcıGiriş(List<Kullanici> kullanicilar)
+        {
+            Kullanicis = kullanicilar;
+            InitializeComponent();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             foreach(Kullanici k in Kullanici.GetKullanici)
@@ -24,7 +33,7 @@ namespace HotelReservation.Forms
                 
                 if (textBox2.Text==k.Adi&& textBox3.Text == k.Sifre)
                 {
-                    RezervasyonFormu rezervasyonFormu = new RezervasyonFormu();
+                    RezervasyonFormu rezervasyonFormu = new RezervasyonFormu(Kullanici.GetKullanici);
                     rezervasyonFormu.Show(); this.Hide();
 
                 }
@@ -42,6 +51,11 @@ namespace HotelReservation.Forms
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void KullanıcıGiriş_Load(object sender, EventArgs e)
         {
 
         }

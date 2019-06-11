@@ -19,14 +19,16 @@ namespace HotelReservation.Forms
         {
             InitializeComponent();
         }
+
         Kullanici Kullanici = new Kullanici();
 
 
         private void button1_Click(object sender, EventArgs e)
         {
             
-            Kullanici.GetKullanici.Add(new Kullanici(Int32.Parse(textBox1.Text), textBox2.Text, textBox3.Text,textBox4.Text, Int32.Parse(textBox5.Text))); 
-            KullanıcıGiriş kullanıcıGiriş = new KullanıcıGiriş();
+            Kullanici.GetKullanici.Add(new Kullanici(Int32.Parse(textBox1.Text), textBox2.Text, textBox3.Text,textBox4.Text, Int32.Parse(textBox5.Text)));
+            dosyaOlustur();
+            KullanıcıGiriş kullanıcıGiriş = new KullanıcıGiriş(Kullanici.GetKullanici);
             kullanıcıGiriş.Show();
             this.Hide();
         }
@@ -63,6 +65,7 @@ namespace HotelReservation.Forms
         }
         private void KullanıcıKayıtFormu_Load(object sender, EventArgs e)
         {
+           
             string dosya_yolu = @"./Kullanici.txt";
 
             FileStream fs = new FileStream(dosya_yolu, FileMode.Open, FileAccess.Read);
@@ -91,6 +94,7 @@ namespace HotelReservation.Forms
             });
             dosyaOlustur();
             */
+
         }
     }
 }

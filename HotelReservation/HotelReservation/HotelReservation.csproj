@@ -67,12 +67,6 @@
     <Compile Include="Class\Admin.cs" />
     <Compile Include="Class\ButikOtel.cs" />
     <Compile Include="Class\CiftKisilikOda.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Class\Kullanici.cs" />
     <Compile Include="Class\LuksOtel.cs" />
     <Compile Include="Class\Oda.cs" />
@@ -95,12 +89,6 @@
     </Compile>
     <Compile Include="Forms\AdminÖzet.Designer.cs">
       <DependentUpon>AdminÖzet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\KullanıcıBilgiGüncellemeFormu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\KullanıcıBilgiGüncellemeFormu.Designer.cs">
-      <DependentUpon>KullanıcıBilgiGüncellemeFormu.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\KullanıcıGiriş.cs">
       <SubType>Form</SubType>
@@ -142,9 +130,6 @@
     <Compile Include="Class\UcKisilikOda.cs" />
     <Compile Include="Class\İkiKisilikOda.cs" />
     <Compile Include="Rezervasyon.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminGiriş.resx">
       <DependentUpon>AdminGiriş.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,9 +138,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminÖzet.resx">
       <DependentUpon>AdminÖzet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\KullanıcıBilgiGüncellemeFormu.resx">
-      <DependentUpon>KullanıcıBilgiGüncellemeFormu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\KullanıcıGiriş.resx">
       <DependentUpon>KullanıcıGiriş.cs</DependentUpon>

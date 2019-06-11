@@ -1,8 +1,6 @@
 C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.csprojAssemblyReference.cache
-C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Form1.resources
 C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.AdminPaneli.resources
 C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.AdminÖzet.resources
-C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.KullanıcıBilgiGüncellemeFormu.resources
 C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.KullanıcıGiriş.resources
 C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.KullanıcıKayıtFormu.resources
 C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.RezervasyonFormu.resources

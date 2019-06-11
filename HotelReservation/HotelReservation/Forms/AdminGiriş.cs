@@ -32,5 +32,12 @@ namespace HotelReservation.Forms
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            KullanıcıKayıtFormu kullanıcıKayıtFormu = new KullanıcıKayıtFormu();
+            kullanıcıKayıtFormu.Show();
+            this.Hide();
+        }
     }
 }

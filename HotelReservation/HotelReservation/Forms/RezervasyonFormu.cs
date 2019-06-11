@@ -18,6 +18,12 @@ namespace HotelReservation.Forms
         {
             InitializeComponent();
         }
+        private static List<Kullanici> kullanicis;
+        public RezervasyonFormu(List<Kullanici> kullanicilar)
+        {
+            kullanicis = kullanicilar;
+            InitializeComponent();
+        }
         //public void SetAllCity(List<Otel> input)//https://stackoverflow.com/questions/20441019/how-to-access-list-from-another-form
         //{
         //    foreach (Otel s in input)
@@ -30,29 +36,32 @@ namespace HotelReservation.Forms
         {
             get { return otels; }
         }
+
+        public static List<Kullanici> Kullanicis { get => kullanicis; set => kullanicis = value; }
+
         private void RezervasyonFormu_Load(object sender, EventArgs e)
         {
-
-            string dosya_yolu = @"./Otel.txt";
-            //Okuma işlem yapacağımız dosyanın yolunu belirtiyoruz.
+            string dosya_yolu = @"./Otel.txt";//sehirleri getirmek için dosyayı okuttum
             FileStream fs = new FileStream(dosya_yolu, FileMode.Open, FileAccess.Read);
-            //Bir file stream nesnesi oluşturuyoruz. 1.parametre dosya yolunu,
-            //2.parametre dosyanın açılacağını,
-            //3.parametre dosyaya erişimin veri okumak için olacağını gösterir.
             StreamReader sw = new StreamReader(fs);
-            //Okuma işlemi için bir StreamReader nesnesi oluşturduk.
-            string yazi = sw.ReadToEnd();
-            //Son satır okunduktan sonra okuma işlemini bitirdik
+            string yazi = sw.ReadToEnd(); 
             sw.Close();
             fs.Close();
             otels = JsonConvert.DeserializeObject<List<Otel>>(yazi, new JsonSerializerSettings
             {
                 TypeNameHandling = TypeNameHandling.Objects
             });
+
             foreach (Otel otel in otels)
             {
+
+                if (!comboBox1.Items.Contains(otel.Sehir))
+                {
                     comboBox1.Items.Add(otel.Sehir);
+                }
+                
             }
+            KullanıcıKayıtFormu.dosyaOlustur();
             
         }
 

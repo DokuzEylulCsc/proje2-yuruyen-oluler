@@ -36,6 +36,7 @@ namespace HotelReservation.Forms
                     break;
                 case OtelType.LuksOtel:
                     otel = new LuksOtel(int.Parse(textBox4.Text), textBox1.Text, textBox2.Text, textBox3.Text, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(1) == CheckState.Checked, checkedListBox1.GetItemCheckState(2) == CheckState.Checked, checkedListBox1.GetItemCheckState(3) == CheckState.Checked, checkedListBox1.GetItemCheckState(4) == CheckState.Checked, checkedListBox1.GetItemCheckState(5) == CheckState.Checked, checkedListBox1.GetItemCheckState(6) == CheckState.Checked);
+                    break;
                 case OtelType.PansiyonOtel:
                     otel = new PansiyonOtel(int.Parse(textBox4.Text), textBox1.Text, textBox2.Text, textBox3.Text, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(1) == CheckState.Checked, checkedListBox1.GetItemCheckState(2) == CheckState.Checked, checkedListBox1.GetItemCheckState(3) == CheckState.Checked, checkedListBox1.GetItemCheckState(4) == CheckState.Checked, checkedListBox1.GetItemCheckState(5) == CheckState.Checked, checkedListBox1.GetItemCheckState(6) == CheckState.Checked);
                     break;

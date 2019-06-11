@@ -5,7 +5,8 @@
     "TelNo": 54585,
     "Adi": "simge",
     "Mail": "simgeakosman@gmail.com",
-    "Sifre": "simge"
+    "Sifre": "simge",
+    "Rezervasyonlar": []
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -13,7 +14,8 @@
     "TelNo": 111,
     "Adi": "ayşe",
     "Mail": "ayse@gmail.com",
-    "Sifre": "1234"
+    "Sifre": "1234",
+    "Rezervasyonlar": []
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -21,7 +23,8 @@
     "TelNo": 8522,
     "Adi": "mehmet",
     "Mail": "mehmet@gmail.com",
-    "Sifre": "asdasdf"
+    "Sifre": "asdasdf",
+    "Rezervasyonlar": []
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -29,7 +32,8 @@
     "TelNo": 76587,
     "Adi": "caner",
     "Mail": "caner@gmail.com",
-    "Sifre": "cnr1994"
+    "Sifre": "cnr1994",
+    "Rezervasyonlar": []
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -37,7 +41,8 @@
     "TelNo": 7888,
     "Adi": "cengiz",
     "Mail": "cengiz@gmail.com",
-    "Sifre": "cngz12"
+    "Sifre": "cngz12",
+    "Rezervasyonlar": []
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -45,7 +50,8 @@
     "TelNo": 9552,
     "Adi": "zekiye",
     "Mail": "zekiye@gmail.com",
-    "Sifre": "74566"
+    "Sifre": "74566",
+    "Rezervasyonlar": []
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -53,7 +59,8 @@
     "TelNo": 8725,
     "Adi": "kader",
     "Mail": "kader@gmail.com",
-    "Sifre": "7585"
+    "Sifre": "7585",
+    "Rezervasyonlar": []
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -61,7 +68,8 @@
     "TelNo": 4154,
     "Adi": "devrim",
     "Mail": "devrim@gmail.com",
-    "Sifre": "devrim"
+    "Sifre": "devrim",
+    "Rezervasyonlar": []
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -69,7 +77,8 @@
     "TelNo": 9654,
     "Adi": "ahu",
     "Mail": "ahu@gmail.com",
-    "Sifre": "ahu"
+    "Sifre": "ahu",
+    "Rezervasyonlar": []
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -77,6 +86,7 @@
     "TelNo": 4444,
     "Adi": "berat",
     "Mail": "berat@gmail.com",
-    "Sifre": "berat"
+    "Sifre": "berat",
+    "Rezervasyonlar": []
   }
 ]

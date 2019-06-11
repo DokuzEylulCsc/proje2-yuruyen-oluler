@@ -29,23 +29,7 @@ namespace HotelReservation.Forms
         {
             get { return otels; }
         }
-
-      
-        string [] s = new string[10000];
-        string[] otelId = new string[200];
-        string[] otelAd = new string[200];
-        string[] sehir = new string[200];
-        string[] yildiz = new string[200];
-        string[] sauna = new string[200];
-        string[] spa = new string[200];
-        string[] havuz = new string[200];
-        string[] acikBufe = new string[200];
-        string[] oyunPark = new string[200];
-        string[] internet = new string[200];
-        string[] sporSalonu = new string[200];
-        string[] lines = new string[2000];
-
-
+        
         public void dosyaOlustur()
         {
             FileStream fileStream = new FileStream(@"./Oda.txt", FileMode.Create);

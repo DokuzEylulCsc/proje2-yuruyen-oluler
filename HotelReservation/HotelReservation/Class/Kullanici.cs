@@ -11,7 +11,7 @@ namespace HotelReservation
         private List<Rezervasyon> rezervasyonlar = new List<Rezervasyon>();
         public Kullanici()
         {
-            rezervasyonlar= new List<Rezervasyon>();
+            Rezervasyonlar= new List<Rezervasyon>();
             Kullanicilar = new List<Kullanici>();
         }
        
@@ -32,10 +32,8 @@ namespace HotelReservation
             get { return Kullanicilar; }
             set { Kullanicilar = value; }
         }
-        
 
-
-
+        public List<Rezervasyon> Rezervasyonlar { get => rezervasyonlar; set => rezervasyonlar = value; }
 
         public Kullanici(int id,string adi,string sifre, string mail ,int telno)
         {
@@ -44,8 +42,8 @@ namespace HotelReservation
             this.Mail = mail;
             this.TelNo = telno;
             this.Sifre = sifre;
-            
-          
+            Rezervasyonlar = new List<Rezervasyon>();
+
 
         }
         public void rezervasyonYap()
