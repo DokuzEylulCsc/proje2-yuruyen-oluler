@@ -460,5 +460,98 @@
         "Fiyat": 560
       }
     ]
+  },
+  {
+    "$type": "HotelReservation.PansiyonOtel, HotelReservation",
+    "Id": 12,
+    "Ad": "Otel",
+    "Yildiz": "3",
+    "Sehir": "İzmir",
+    "Sauna": false,
+    "AcikBufe": false,
+    "Spa": false,
+    "Havuz": false,
+    "Internet": false,
+    "SporSalonu": false,
+    "OyunParki": false,
+    "Odalar": [
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": false,
+        "Tv": false,
+        "Jakuzi": false,
+        "DenizManzara": false,
+        "OtelId": 12,
+        "OdaId": 1,
+        "Fiyat": 78
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": false,
+        "Tv": false,
+        "Jakuzi": false,
+        "DenizManzara": false,
+        "OtelId": 12,
+        "OdaId": 1,
+        "Fiyat": 78
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": false,
+        "Tv": false,
+        "Jakuzi": false,
+        "DenizManzara": false,
+        "OtelId": 12,
+        "OdaId": 1,
+        "Fiyat": 78
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": false,
+        "Tv": false,
+        "Jakuzi": false,
+        "DenizManzara": false,
+        "OtelId": 12,
+        "OdaId": 1,
+        "Fiyat": 78
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": false,
+        "Tv": false,
+        "Jakuzi": false,
+        "DenizManzara": false,
+        "OtelId": 12,
+        "OdaId": 1,
+        "Fiyat": 78
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": false,
+        "Tv": false,
+        "Jakuzi": false,
+        "DenizManzara": false,
+        "OtelId": 12,
+        "OdaId": 1,
+        "Fiyat": 78
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": false,
+        "Tv": false,
+        "Jakuzi": false,
+        "DenizManzara": false,
+        "OtelId": 12,
+        "OdaId": 1,
+        "Fiyat": 78
+      }
+    ]
   }
 ]

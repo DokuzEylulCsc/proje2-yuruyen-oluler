@@ -1,0 +1,82 @@
+[
+  {
+    "$type": "HotelReservation.Kullanici, HotelReservation",
+    "Id": 1,
+    "TelNo": 54585,
+    "Adi": "simge",
+    "Mail": "simgeakosman@gmail.com",
+    "Sifre": "simge"
+  },
+  {
+    "$type": "HotelReservation.Kullanici, HotelReservation",
+    "Id": 2,
+    "TelNo": 111,
+    "Adi": "ayşe",
+    "Mail": "ayse@gmail.com",
+    "Sifre": "1234"
+  },
+  {
+    "$type": "HotelReservation.Kullanici, HotelReservation",
+    "Id": 3,
+    "TelNo": 8522,
+    "Adi": "mehmet",
+    "Mail": "mehmet@gmail.com",
+    "Sifre": "asdasdf"
+  },
+  {
+    "$type": "HotelReservation.Kullanici, HotelReservation",
+    "Id": 4,
+    "TelNo": 76587,
+    "Adi": "caner",
+    "Mail": "caner@gmail.com",
+    "Sifre": "cnr1994"
+  },
+  {
+    "$type": "HotelReservation.Kullanici, HotelReservation",
+    "Id": 5,
+    "TelNo": 7888,
+    "Adi": "cengiz",
+    "Mail": "cengiz@gmail.com",
+    "Sifre": "cngz12"
+  },
+  {
+    "$type": "HotelReservation.Kullanici, HotelReservation",
+    "Id": 6,
+    "TelNo": 9552,
+    "Adi": "zekiye",
+    "Mail": "zekiye@gmail.com",
+    "Sifre": "74566"
+  },
+  {
+    "$type": "HotelReservation.Kullanici, HotelReservation",
+    "Id": 7,
+    "TelNo": 8725,
+    "Adi": "kader",
+    "Mail": "kader@gmail.com",
+    "Sifre": "7585"
+  },
+  {
+    "$type": "HotelReservation.Kullanici, HotelReservation",
+    "Id": 8,
+    "TelNo": 4154,
+    "Adi": "devrim",
+    "Mail": "devrim@gmail.com",
+    "Sifre": "devrim"
+  },
+  {
+    "$type": "HotelReservation.Kullanici, HotelReservation",
+    "Id": 9,
+    "TelNo": 9654,
+    "Adi": "ahu",
+    "Mail": "ahu@gmail.com",
+    "Sifre": "ahu"
+  },
+  {
+    "$type": "HotelReservation.Kullanici, HotelReservation",
+    "Id": 10,
+    "TelNo": 4444,
+    "Adi": "berat",
+    "Mail": "berat@gmail.com",
+    "Sifre": "berat"
+  }
+]

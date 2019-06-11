@@ -25,7 +25,7 @@ namespace HotelReservation
         public string Mail { get => mail; set => mail = value; }
         public string Sifre { get => sifre; set => sifre = value; }
         private static List<Kullanici> Kullanicilar;
-       
+
 
         public static List<Kullanici> GetKullanici
         {

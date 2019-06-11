@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,6 +32,23 @@ namespace HotelReservation.Forms
         }
         private void RezervasyonFormu_Load(object sender, EventArgs e)
         {
+
+            string dosya_yolu = @"./Otel.txt";
+            //Okuma işlem yapacağımız dosyanın yolunu belirtiyoruz.
+            FileStream fs = new FileStream(dosya_yolu, FileMode.Open, FileAccess.Read);
+            //Bir file stream nesnesi oluşturuyoruz. 1.parametre dosya yolunu,
+            //2.parametre dosyanın açılacağını,
+            //3.parametre dosyaya erişimin veri okumak için olacağını gösterir.
+            StreamReader sw = new StreamReader(fs);
+            //Okuma işlemi için bir StreamReader nesnesi oluşturduk.
+            string yazi = sw.ReadToEnd();
+            //Son satır okunduktan sonra okuma işlemini bitirdik
+            sw.Close();
+            fs.Close();
+            otels = JsonConvert.DeserializeObject<List<Otel>>(yazi, new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.Objects
+            });
             foreach (Otel otel in otels)
             {
                     comboBox1.Items.Add(otel.Sehir);

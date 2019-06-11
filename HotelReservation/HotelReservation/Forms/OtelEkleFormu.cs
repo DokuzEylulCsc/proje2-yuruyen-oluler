@@ -166,6 +166,16 @@ namespace HotelReservation.Forms
             });
             dosyaOlustur();
             */
+            
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            AdminPaneli admin = new AdminPaneli();
+            admin.Show();
+            this.Hide();
+            
 
         }
     }

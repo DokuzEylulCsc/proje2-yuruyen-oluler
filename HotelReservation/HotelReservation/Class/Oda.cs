@@ -21,7 +21,7 @@ namespace HotelReservation
                     case OdaDurumu.Bos:
                         break;
                     case OdaDurumu.Dolu:
-                        break;
+                        break; 
                     case OdaDurumu.Tadilatta:
                         break;
                     default:
@@ -67,9 +67,7 @@ namespace HotelReservation
             return $"{OdaId} {Fiyat} {MiniBar} {Jakuzi} {DenizManzara} {Tv}";
            }
     }
-    public enum OdaDurumu //Odanın durumları sabit olacağından enum tanımladım. Daha sonra verilere GetNames metodu ile ulaşabiliriz.
-        // Eğer enum tanımlamasaydım property olarak direk tanımlasaydım verilere ulaşmak için Oda.Method adı yazmak zorunda olcaktım 
-        //Bunları okuduktan sonra silersin
+    public enum OdaDurumu 
     {
         Bos,
         Dolu,
