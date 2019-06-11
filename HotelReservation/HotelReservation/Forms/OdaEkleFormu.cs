@@ -100,19 +100,19 @@ namespace HotelReservation.Forms
                     }
                     if (comboBox2.SelectedIndex == 0)
                     {
-                       otel.Odalar.Add(new CiftKisilikOda(otel.Id,Int32.Parse(textBox1.Text),Int32.Parse(textBox2.Text), checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
+                       otel.Odalar.Add(new CiftKisilikOda(otel.Id,Int32.Parse(textBox1.Text),Int32.Parse(textBox2.Text), checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(1) == CheckState.Checked, checkedListBox1.GetItemCheckState(2) == CheckState.Checked, checkedListBox1.GetItemCheckState(3) == CheckState.Checked));
                     }
                     else if (comboBox2.SelectedIndex == 1)
                     {
-                        otel.Odalar.Add(new İkiKisilikOda(otel.Id, Int32.Parse(textBox1.Text), Int32.Parse(textBox2.Text),checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
+                        otel.Odalar.Add(new İkiKisilikOda(otel.Id, Int32.Parse(textBox1.Text), Int32.Parse(textBox2.Text), checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(1) == CheckState.Checked, checkedListBox1.GetItemCheckState(2) == CheckState.Checked, checkedListBox1.GetItemCheckState(3) == CheckState.Checked));
                     }
                     else if (comboBox2.SelectedIndex == 2)
                     {
-                        otel.Odalar.Add(new TekKisilikOda(otel.Id, Int32.Parse(textBox1.Text), Int32.Parse(textBox2.Text), checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
+                        otel.Odalar.Add(new TekKisilikOda(otel.Id, Int32.Parse(textBox1.Text), Int32.Parse(textBox2.Text), checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(1) == CheckState.Checked, checkedListBox1.GetItemCheckState(2) == CheckState.Checked, checkedListBox1.GetItemCheckState(3) == CheckState.Checked));
                     }
                     else if (comboBox2.SelectedIndex == 3)
                     {
-                        otel.Odalar.Add(new UcKisilikOda(otel.Id, Int32.Parse(textBox1.Text), Int32.Parse(textBox2.Text), checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(0) == CheckState.Checked));
+                        otel.Odalar.Add(new UcKisilikOda(otel.Id, Int32.Parse(textBox1.Text), Int32.Parse(textBox2.Text), checkedListBox1.GetItemCheckState(0) == CheckState.Checked, checkedListBox1.GetItemCheckState(1) == CheckState.Checked, checkedListBox1.GetItemCheckState(2) == CheckState.Checked, checkedListBox1.GetItemCheckState(3) == CheckState.Checked));
                     }
                     break;
                 }
