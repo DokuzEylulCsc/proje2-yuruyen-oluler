@@ -8,21 +8,13 @@ namespace HotelReservation
 {
    public class Kullanici
     {
-       
-        private static List<Kullanici> KullaniciList = new List<Kullanici>();
-        public List<Rezervasyon> Rezervasyonlar { get; set; }//1 Kişi birden fazla rezervasyon yapabilir.
+        private List<Rezervasyon> rezervasyonlar = new List<Rezervasyon>();
         public Kullanici()
         {
-            Rezervasyonlar = new List<Rezervasyon>();
-            KullaniciList = new List<Kullanici>();
+            rezervasyonlar= new List<Rezervasyon>();
+            Kullanicilar = new List<Kullanici>();
         }
-        public static List<Kullanici> GetKullaniciList
-        {
-            get
-            {
-                return KullaniciList;
-            }
-        }
+       
 
         private int id, telNo;
         private string adi,mail;
@@ -32,15 +24,28 @@ namespace HotelReservation
         public string Adi { get => adi; set => adi = value; }
         public string Mail { get => mail; set => mail = value; }
         public string Sifre { get => sifre; set => sifre = value; }
+        private static List<Kullanici> Kullanicilar;
+       
 
-        public Kullanici(int id,string adi,string sifre, int telno, string mail)
+        public static List<Kullanici> GetKullanici
+        {
+            get { return Kullanicilar; }
+            set { Kullanicilar = value; }
+        }
+        
+
+
+
+
+        public Kullanici(int id,string adi,string sifre, string mail ,int telno)
         {
             this.Id = id;
             this.Adi = adi;
             this.Mail = mail;
             this.TelNo = telno;
             this.Sifre = sifre;
-            Rezervasyonlar = new List<Rezervasyon>();
+            
+          
 
         }
         public void rezervasyonYap()
@@ -57,7 +62,7 @@ namespace HotelReservation
         }
         public void rezervasyonaara()
         {
-            //Burada rez numarasına göre rezervasyon detayları verilcek.
+            
         }
 
     }

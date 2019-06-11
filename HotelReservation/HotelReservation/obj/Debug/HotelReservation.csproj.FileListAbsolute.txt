@@ -58,3 +58,6 @@ C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\
 C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\HotelReservation\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\HotelReservation\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Lenovo\Desktop\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.csproj.CopyComplete

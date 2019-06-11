@@ -16,16 +16,13 @@ namespace HotelReservation.Forms
         {
             InitializeComponent();
         }
-       List<Kullanici> GetKullanici { get; } = new List<Kullanici>();
-        
+        Kullanici Kullanici = new Kullanici();
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             
-            GetKullanici.Add(new Kullanici(Int32.Parse(textBox5.Text), textBox1.Text, textBox2.Text,Int32.Parse(textBox3.Text), textBox4.Text));
-            string[] a = { textBox5.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text };
-            var satir = new ListViewItem(a);
-            listView1.Items.Add(satir);
-
+            Kullanici.GetKullanici.Add(new Kullanici(Int32.Parse(textBox1.Text), textBox2.Text, textBox3.Text,textBox4.Text, Int32.Parse(textBox5.Text))); 
             KullanıcıGiriş kullanıcıGiriş = new KullanıcıGiriş();
             kullanıcıGiriş.Show();
             this.Hide();
@@ -38,14 +35,5 @@ namespace HotelReservation.Forms
             this.Hide();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

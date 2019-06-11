@@ -27,5 +27,10 @@ namespace HotelReservation.Forms
             }
            
         }
+
+        private void AdminGiriş_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

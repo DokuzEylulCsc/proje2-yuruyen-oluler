@@ -21,8 +21,7 @@ namespace HotelReservation
             this.Id = id;
             this.Gelistarihi = gelistarihi;
             this.Donustarihi = donustarihi;
-
-
+            
         }
         
     }

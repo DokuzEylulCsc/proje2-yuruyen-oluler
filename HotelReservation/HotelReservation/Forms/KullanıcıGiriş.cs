@@ -16,10 +16,10 @@ namespace HotelReservation.Forms
         {
             InitializeComponent();
         }
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach(Kullanici k in Kullanici.GetKullaniciList)
+            foreach(Kullanici k in Kullanici.GetKullanici)
             {
                 
                 if (textBox2.Text==k.Adi&& textBox3.Text == k.Sifre)
