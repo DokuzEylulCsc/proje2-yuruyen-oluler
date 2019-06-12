@@ -9,7 +9,7 @@ namespace HotelReservation
 {
     class Admin
     {
-        private string sifre="admin";
+        private string sifre="admin"; //admin giriş formunda başarıyla giriş yapabilmesi için şifrenin admin olması gerekiyor. tek bir admin var.
         
         public string getSifre
         {
@@ -55,17 +55,7 @@ namespace HotelReservation
         //    OtelEkleFormu.textBox1.Text = otels[0].getAd + "1";
         //    OtelEkleFormu.listBox1.Items.Add(otels.ToString());
         //}
-        
-
-        public List<Oda> OdaEkleme(Otel otel)
-        {
-            return new List<Oda>();
-        }
-        
-        public List<Oda> OdaArama(Otel otel)
-        {
-            return new List<Oda>();
-        }
+     
         //public override string ToString()
         //{
         //    return $"Otel Adı :{otel.getAd}Şehir :{otel.getSehir} Yıldız :{otel.getYildiz} Sauna: {otel.getSauna}";
