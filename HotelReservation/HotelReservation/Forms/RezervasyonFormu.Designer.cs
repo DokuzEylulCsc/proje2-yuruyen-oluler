@@ -38,12 +38,16 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -135,7 +139,15 @@
             // checkedListBox1
             // 
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(25, 273);
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Sauna",
+            "Açık Büfe",
+            "Spa",
+            "Havuz",
+            "Oyun Parkı ",
+            "İnternet",
+            "Spor Salonu"});
+            this.checkedListBox1.Location = new System.Drawing.Point(24, 334);
             this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(175, 109);
@@ -152,19 +164,10 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(349, 39);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(371, 472);
-            this.listBox1.TabIndex = 5;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(22, 404);
+            this.label5.Location = new System.Drawing.Point(21, 465);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
@@ -179,7 +182,7 @@
             "İki Kişilik",
             "Tek Kişilik",
             "Üç Kişilik"});
-            this.comboBox4.Location = new System.Drawing.Point(107, 401);
+            this.comboBox4.Location = new System.Drawing.Point(106, 462);
             this.comboBox4.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(92, 21);
@@ -188,7 +191,12 @@
             // checkedListBox2
             // 
             this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Location = new System.Drawing.Point(25, 466);
+            this.checkedListBox2.Items.AddRange(new object[] {
+            "Mini Bar",
+            "Jakuzi",
+            "Deniz Manzaralı",
+            "Tv"});
+            this.checkedListBox2.Location = new System.Drawing.Point(24, 527);
             this.checkedListBox2.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.Size = new System.Drawing.Size(175, 109);
@@ -212,14 +220,60 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Maksimum Fiyat";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(247, 220);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(79, 72);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Uygun Odaları Getir";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(247, 334);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(79, 72);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Rezervasyon Yap";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(367, 54);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(372, 264);
+            this.listBox1.TabIndex = 10;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(23, 260);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(175, 20);
+            this.dateTimePicker1.TabIndex = 11;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(23, 298);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(175, 20);
+            this.dateTimePicker2.TabIndex = 11;
+            // 
             // RezervasyonFormu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 594);
+            this.ClientSize = new System.Drawing.Size(777, 752);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkedListBox2);
             this.Controls.Add(this.checkedListBox1);
@@ -235,7 +289,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RezervasyonFormu";
-            this.Text = "RezervasyonFormu";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.RezervasyonFormu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -254,11 +308,15 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.CheckedListBox checkedListBox2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }

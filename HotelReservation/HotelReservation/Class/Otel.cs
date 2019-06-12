@@ -45,6 +45,7 @@ namespace HotelReservation
             this.OyunParki = oyunParki;
             this.Internet = internet;
             this.SporSalonu = sporSalonu;
+            Odalar = odalar;
         }
      
     }

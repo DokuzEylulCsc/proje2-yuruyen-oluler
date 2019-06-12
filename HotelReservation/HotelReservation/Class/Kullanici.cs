@@ -46,23 +46,7 @@ namespace HotelReservation
 
 
         }
-        public void rezervasyonYap()
-        {
-
-        }
-        public void rezervasyonSil()
-        {
-
-        }
-        public void rezervasyonduzenle()
-        {
-
-        }
-        public void rezervasyonaara()
-        {
-            
-        }
-
+       
     }
 }
    

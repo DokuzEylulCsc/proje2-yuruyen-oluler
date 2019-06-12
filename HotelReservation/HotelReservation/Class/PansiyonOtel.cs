@@ -13,6 +13,10 @@ namespace HotelReservation
         {
           
         }
+        public PansiyonOtel()
+        {
+            Odalar = new List<Oda>();
+        }
        
     }
 }

@@ -9,18 +9,20 @@ namespace HotelReservation
      public class Rezervasyon
         
     {
-        private int id;
-        public int Id { get => id; set => id = value; }
+        
         public DateTime Gelistarihi { get => gelistarihi; set => gelistarihi = value; }
         public DateTime Donustarihi { get => donustarihi; set => donustarihi = value; }
+        public List<Oda> Odas { get => odas; set => odas = value; }
+
+        private List<Oda> odas = new List<Oda>();
 
         private DateTime gelistarihi, donustarihi;
       
-        public Rezervasyon(int id,DateTime gelistarihi,DateTime donustarihi)
+        public Rezervasyon(DateTime gelistarihi,DateTime donustarihi)
         {
-            this.Id = id;
             this.Gelistarihi = gelistarihi;
             this.Donustarihi = donustarihi;
+            Odas = new List<Oda>();
             
         }
         
