@@ -26,7 +26,7 @@ namespace HotelReservation.Forms
             get { return otels; }
         }
 
-        public IOtel ProduceOtel(OtelType type)
+        public IOtel ProduceOtel(OtelType type) //Factory Design ile Otelleri oluşturma http://www.canertosuner.com/post/factory-method-pattern-nedir-nasil-kullanilir
         {
             IOtel otel = null;
             switch (type)
@@ -51,7 +51,7 @@ namespace HotelReservation.Forms
         private void button1_Click(object sender, EventArgs e)
         {
          
-            if (comboBox1.SelectedIndex == 0)
+            if (comboBox1.SelectedIndex == 0) //http://www.canertosuner.com/post/factory-method-pattern-nedir-nasil-kullanilir
             {
                 IOtel otelButik = ProduceOtel(OtelType.ButikOtel);
                 otels.Add((Otel)otelButik);
@@ -76,7 +76,7 @@ namespace HotelReservation.Forms
         }
         public static void dosyaOlustur() //https://stackoverflow.com/questions/15880574/deserialize-collection-of-interface-instances
         {
-            FileStream fileStream = new FileStream(@"./Otel.txt", FileMode.Create);
+            FileStream fileStream = new FileStream(@"./Otel.txt", FileMode.Create); //otels listine otel eklendikçe bu fonksiyon çağrıldığında json dosyasına ekleme yapacak
             StreamWriter sW = new StreamWriter(fileStream);
 
             string json = JsonConvert.SerializeObject(otels, Formatting.Indented, new JsonSerializerSettings
@@ -94,7 +94,7 @@ namespace HotelReservation.Forms
         private void button2_Click(object sender, EventArgs e)
         {
             
-            OdaEkleFormu odaEkleFormu = new OdaEkleFormu(otels);
+            OdaEkleFormu odaEkleFormu = new OdaEkleFormu(otels);//otel bilgilerini odaformuna atmak için odaekleformunun constr'ını değiştirdim.
             odaEkleFormu.Show();
             this.Hide();
             //RezervasyonFormu rezervasyon = new RezervasyonFormu();
@@ -106,7 +106,7 @@ namespace HotelReservation.Forms
         private void OtelEkleFormu_Load(object sender, EventArgs e)
         {
             
-            string dosya_yolu = @"./Otel.txt";
+            string dosya_yolu = @"./Otel.txt"; //ilk form yüklemede jsonda var olan otelleri okuyup liste atıyor bir nevi veritabanı işlevi görüyor
             //Okuma işlem yapacağımız dosyanın yolunu belirtiyoruz.
             FileStream fs = new FileStream(dosya_yolu, FileMode.Open, FileAccess.Read);
             //Bir file stream nesnesi oluşturuyoruz. 1.parametre dosya yolunu,

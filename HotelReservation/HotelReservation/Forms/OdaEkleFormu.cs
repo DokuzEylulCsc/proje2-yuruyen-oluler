@@ -19,7 +19,7 @@ namespace HotelReservation.Forms
             InitializeComponent();
         }
         private static List<Otel> otels;
-        public OdaEkleFormu(List<Otel> oteller)
+        public OdaEkleFormu(List<Otel> oteller)//otel listini bu forma çekmek için
         {
             otels = oteller;
             InitializeComponent();
@@ -30,7 +30,7 @@ namespace HotelReservation.Forms
             get { return otels; }
         }
         
-        public void dosyaOlustur()
+        public void dosyaOlustur() //burası gereksiz lazım olursa diye yapmıştım
         {
             FileStream fileStream = new FileStream(@"./Oda.txt", FileMode.Create);
             StreamWriter sW = new StreamWriter(fileStream);
@@ -53,7 +53,7 @@ namespace HotelReservation.Forms
         private void OdaEkleFormu_Load(object sender, EventArgs e)
         {
         
-            foreach (Otel otel in otels)
+            foreach (Otel otel in otels) // var olan otellerin isimlerini seçenek sunma
             {
                 comboBox1.Items.Add(otel.Ad);
             }
@@ -68,9 +68,9 @@ namespace HotelReservation.Forms
            string otelAd =(string)comboBox1.SelectedItem;
           foreach(Otel otel in otels)
             {
-                if (otel.Ad.Equals(otelAd))
+                if (otel.Ad.Equals(otelAd)) //Comboboxta seçilen ile otel'in adı aynı ise oda ekleme işlemini gerçekleştiriyor
                 {
-                    if (otel.Odalar == null)
+                    if (otel.Odalar == null) //otel.Odaları null döndürdüğü için böyle bir şey yapma gereksinimi duydum
                     {
                         otel.Odalar = new List<Oda>();
                     }
@@ -94,7 +94,7 @@ namespace HotelReservation.Forms
                 }
             }
 
-            OtelEkleFormu.dosyaOlustur();
+            OtelEkleFormu.dosyaOlustur(); //Otel.txt'in içindeki null olan Odaları doldurmasını sağlıyor
           
         }
 
