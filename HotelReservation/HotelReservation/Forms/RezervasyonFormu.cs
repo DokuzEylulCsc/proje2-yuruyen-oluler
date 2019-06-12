@@ -57,288 +57,102 @@ namespace HotelReservation.Forms
                 if (!comboBox1.Items.Contains(otel.Sehir)) //Aynı şehirleri tekrar eklemesin diye
                 {
                     comboBox1.Items.Add(otel.Sehir);//Varolan şehirlerden seçim yapması için
+                    
                 }
-                
+               
             }
             KullanıcıKayıtFormu.dosyaOlustur();
 
         }
 
-        private void button1_Click(object sender, EventArgs e) //otel.Odalar null döndüğü için tamamlayamadım ama kaba taslak böyle bir şey olacaktı.
+        private void button1_Click(object sender, EventArgs e) 
         {
-          /* if (comboBox3.SelectedIndex == 0) 
-            {
-                foreach(Otel otel in Otels)
+            string sehir =(string) comboBox1.SelectedItem;
+            string yildiz = (string)comboBox2.SelectedItem;
+
+            
+                foreach (Otel otel in Otels)
                 {
-                    foreach(Oda oda in otel.Odalar)
+                    if (otel.Odalar == null)
                     {
-                        if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
+
+                    }
+
+                    else
+                    {
+                        foreach (Oda oda in otel.Odalar)
                         {
-                            if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
+                            if (otel.Odalar == null)
                             {
 
-                                listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
+                            }
+                            else
+                            {
+                                if (sehir.Equals(otel.Sehir) && yildiz.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
+                                {
+                                    if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
+                                    {
 
+                                        listBox1.Items.Add(oda.OdaId);
+                                    }
+
+                                }
                             }
 
-                        }break;
+                        }
                     }
+
+                
+            }
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string sehir = (string)comboBox1.SelectedItem;
+            string yildiz = (string)comboBox2.SelectedItem;
+            int secilen=(int)listBox1.SelectedItem;
+            foreach(Kullanici kullanici in Kullanicis)
+            {
+                foreach (Otel otel in Otels)
+                {
+
+                    if (otel.Odalar == null)
+                    {
+
+                    }
+
+                    else
+                    {
+                        foreach (Oda oda in otel.Odalar)
+                        {
+                            if (secilen == (oda.OdaId))
+
+                                if (otel.Odalar == null)
+                                {
+
+                                }
+                                else
+                                {
+                                    if (sehir.Equals(otel.Sehir) && yildiz.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
+                                    {
+                                        if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
+                                        {
+                                            kullanici.Rezervasyonlar.Add(new Rezervasyon(dateTimePicker1.Value, dateTimePicker2.Value));
+                                        }
+
+                                    }
+                                }
+
+                        }
+                    }
+
                 }
-            }*/
-
-            /* if (comboBox3.SelectedIndex == 0)
-             {
-                 foreach (Otel otel in Otels)
-                 {
-                     if (otel.GetType()==typeof(PansiyonOtel)) {
-                         if (comboBox4.SelectedIndex == 0)
-
-                             foreach (CiftKisilikOda oda in otel.Odalar)
-                             {
-                                 if (oda.GetType()==typeof(CiftKisilikOda))
-                                 {
-                                     if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                                     {
-                                         if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                                         {
-
-                                             listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-
-                                         }
-
-                                     }
-                                 }
-
-
-                             }
-
-                         if (comboBox4.SelectedIndex == 1)
-                             foreach (İkiKisilikOda oda in otel.Odalar)
-                             {
-                                 if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                                 {
-                                     if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                                     {
-                                         listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                                     }
-
-                                 }
-
-                             }
-
-                         if (comboBox4.SelectedIndex == 2)
-                             foreach (TekKisilikOda oda in otel.Odalar)
-                             {
-                                 if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                                 {
-                                     if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                                     {
-                                         listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                                     }
-
-                                 }
-
-                             }
-                         if (comboBox4.SelectedIndex == 3)
-                             foreach (UcKisilikOda oda in otel.Odalar)
-                             {
-                                 if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                                 {
-                                     if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                                     {
-                                         listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                                     }
-
-                                 }
-
-                             }
-                     }
-
-                 }
-             }
-
-            if (comboBox3.SelectedIndex == 1)
-        {
-            foreach (ButikOtel otel in Otels)
-            {
-                if (comboBox4.SelectedIndex == 0)
-                    foreach (CiftKisilikOda oda in otel.Odalar)
-                    {
-                        if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                        {
-                            if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                            {
-                                listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                            }
-
-                        }
-
-                    }
-
-                if (comboBox4.SelectedIndex == 1)
-                    foreach (İkiKisilikOda oda in otel.Odalar)
-                    {
-                        if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                        {
-                            if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                            {
-                                listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                            }
-
-                        }
-
-                    }
-
-                if (comboBox4.SelectedIndex == 2)
-                    foreach (TekKisilikOda oda in otel.Odalar)
-                    {
-                        if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                        {
-                            if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                            {
-                                listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                            }
-
-                        }
-
-                    }
-                if (comboBox4.SelectedIndex == 3)
-                    foreach (UcKisilikOda oda in otel.Odalar)
-                    {
-                        if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                        {
-                            if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                            {
-                                listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                            }
-
-                        }
-
-                    }
-
             }
-        }
+          
+            KullanıcıKayıtFormu.dosyaOlustur();
 
-        if (comboBox3.SelectedIndex == 2)
-        {
-            foreach (TatilKöyüOtel otel in Otels)
-            {
-                if (comboBox4.SelectedIndex == 0)
-                    foreach (CiftKisilikOda oda in otel.Odalar)
-                    {
-                        if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                        {
-                            if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                            {
-                                listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                            }
-
-                        }
-
-                    }
-
-                if (comboBox4.SelectedIndex == 1)
-                    foreach (İkiKisilikOda oda in otel.Odalar)
-                    {
-                        if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                        {
-                            if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                            {
-                                listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                            }
-
-                        }
-
-                    }
-
-                if (comboBox4.SelectedIndex == 2)
-                    foreach (TekKisilikOda oda in otel.Odalar)
-                    {
-                        if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                        {
-                            if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                            {
-                                listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                            }
-
-                        }
-
-                    }
-                if (comboBox4.SelectedIndex == 3)
-                    foreach (UcKisilikOda oda in otel.Odalar)
-                    {
-                        if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                        {
-                            if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                            {
-                                listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                            }
-
-                        }
-                    }
-            }
-        }
-
-        if (comboBox3.SelectedIndex == 3)
-        {
-            foreach (LuksOtel otel in Otels)
-            {
-                if (comboBox4.SelectedIndex == 0)
-                    foreach (CiftKisilikOda oda in otel.Odalar)
-                    {
-                        if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                        {
-                            if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                            {
-                                listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                            }
-
-                        }
-
-                    }
-
-                if (comboBox4.SelectedIndex == 1)
-                    foreach (İkiKisilikOda oda in otel.Odalar)
-                    {
-                        if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                        {
-                            if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                            {
-                                listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                            }
-
-                        }
-                    }
-
-                if (comboBox4.SelectedIndex == 2)
-                    foreach (TekKisilikOda oda in otel.Odalar)
-                    {
-                        if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                        {
-                            if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                            {
-                                listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                            }
-
-                        }
-
-                    }
-                if (comboBox4.SelectedIndex == 3)
-                    foreach (UcKisilikOda oda in otel.Odalar)
-                    {
-                        if (comboBox1.Items.Equals(otel.Sehir) && comboBox2.Items.Equals(otel.Yildiz) && ((oda.Fiyat > Int64.Parse(textBox1.Text)) && (oda.Fiyat < Int64.Parse(textBox2.Text))) && otel.Sauna == (checkedListBox1.GetItemCheckState(0) == CheckState.Checked) && otel.AcikBufe == (checkedListBox1.GetItemCheckState(1) == CheckState.Checked) && otel.Spa == (checkedListBox1.GetItemCheckState(2) == CheckState.Checked) && otel.Havuz == (checkedListBox1.GetItemCheckState(3) == CheckState.Checked) && otel.OyunParki == (checkedListBox1.GetItemCheckState(4) == CheckState.Checked) && otel.Internet == (checkedListBox1.GetItemCheckState(5) == CheckState.Checked) && otel.SporSalonu == (checkedListBox1.GetItemCheckState(6) == CheckState.Checked))
-                        {
-                            if (oda.MiniBar == (checkedListBox2.GetItemCheckState(0) == CheckState.Checked) && oda.Jakuzi == (checkedListBox2.GetItemCheckState(1) == CheckState.Checked) && oda.DenizManzara == (checkedListBox2.GetItemCheckState(2) == CheckState.Checked) && oda.Tv == (checkedListBox2.GetItemCheckState(3) == CheckState.Checked))
-                            {
-                                listBox1.Items.Add(otel.Ad + " " + oda.OdaId + " " + oda.Fiyat);
-                            }
-
-                        }
-
-                    }
-            }
-        }*/
-
+            //
         }
     }
 }

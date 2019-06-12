@@ -6,7 +6,15 @@
     "Adi": "simge",
     "Mail": "simgeakosman@gmail.com",
     "Sifre": "simge",
-    "Rezervasyonlar": []
+    "Rezervasyonlar": [
+      {
+        "$type": "HotelReservation.Rezervasyon, HotelReservation",
+        "Gelistarihi": "2019-06-12T23:41:24.8688567+03:00",
+        "Donustarihi": "2019-06-12T23:41:24.8608609+03:00",
+        "Odas": [],
+        "Otels": []
+      }
+    ]
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -15,7 +23,15 @@
     "Adi": "ayşe",
     "Mail": "ayse@gmail.com",
     "Sifre": "1234",
-    "Rezervasyonlar": []
+    "Rezervasyonlar": [
+      {
+        "$type": "HotelReservation.Rezervasyon, HotelReservation",
+        "Gelistarihi": "2019-06-12T23:41:24.8688567+03:00",
+        "Donustarihi": "2019-06-12T23:41:24.8608609+03:00",
+        "Odas": [],
+        "Otels": []
+      }
+    ]
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -24,7 +40,15 @@
     "Adi": "mehmet",
     "Mail": "mehmet@gmail.com",
     "Sifre": "asdasdf",
-    "Rezervasyonlar": []
+    "Rezervasyonlar": [
+      {
+        "$type": "HotelReservation.Rezervasyon, HotelReservation",
+        "Gelistarihi": "2019-06-12T23:41:24.8688567+03:00",
+        "Donustarihi": "2019-06-12T23:41:24.8608609+03:00",
+        "Odas": [],
+        "Otels": []
+      }
+    ]
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -33,7 +57,15 @@
     "Adi": "caner",
     "Mail": "caner@gmail.com",
     "Sifre": "cnr1994",
-    "Rezervasyonlar": []
+    "Rezervasyonlar": [
+      {
+        "$type": "HotelReservation.Rezervasyon, HotelReservation",
+        "Gelistarihi": "2019-06-12T23:41:24.8688567+03:00",
+        "Donustarihi": "2019-06-12T23:41:24.8608609+03:00",
+        "Odas": [],
+        "Otels": []
+      }
+    ]
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -42,7 +74,15 @@
     "Adi": "cengiz",
     "Mail": "cengiz@gmail.com",
     "Sifre": "cngz12",
-    "Rezervasyonlar": []
+    "Rezervasyonlar": [
+      {
+        "$type": "HotelReservation.Rezervasyon, HotelReservation",
+        "Gelistarihi": "2019-06-12T23:41:24.8688567+03:00",
+        "Donustarihi": "2019-06-12T23:41:24.8608609+03:00",
+        "Odas": [],
+        "Otels": []
+      }
+    ]
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -51,7 +91,15 @@
     "Adi": "zekiye",
     "Mail": "zekiye@gmail.com",
     "Sifre": "74566",
-    "Rezervasyonlar": []
+    "Rezervasyonlar": [
+      {
+        "$type": "HotelReservation.Rezervasyon, HotelReservation",
+        "Gelistarihi": "2019-06-12T23:41:24.8688567+03:00",
+        "Donustarihi": "2019-06-12T23:41:24.8608609+03:00",
+        "Odas": [],
+        "Otels": []
+      }
+    ]
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -60,7 +108,15 @@
     "Adi": "kader",
     "Mail": "kader@gmail.com",
     "Sifre": "7585",
-    "Rezervasyonlar": []
+    "Rezervasyonlar": [
+      {
+        "$type": "HotelReservation.Rezervasyon, HotelReservation",
+        "Gelistarihi": "2019-06-12T23:41:24.8688567+03:00",
+        "Donustarihi": "2019-06-12T23:41:24.8608609+03:00",
+        "Odas": [],
+        "Otels": []
+      }
+    ]
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -69,7 +125,15 @@
     "Adi": "devrim",
     "Mail": "devrim@gmail.com",
     "Sifre": "devrim",
-    "Rezervasyonlar": []
+    "Rezervasyonlar": [
+      {
+        "$type": "HotelReservation.Rezervasyon, HotelReservation",
+        "Gelistarihi": "2019-06-12T23:41:24.8688567+03:00",
+        "Donustarihi": "2019-06-12T23:41:24.8608609+03:00",
+        "Odas": [],
+        "Otels": []
+      }
+    ]
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -78,7 +142,15 @@
     "Adi": "ahu",
     "Mail": "ahu@gmail.com",
     "Sifre": "ahu",
-    "Rezervasyonlar": []
+    "Rezervasyonlar": [
+      {
+        "$type": "HotelReservation.Rezervasyon, HotelReservation",
+        "Gelistarihi": "2019-06-12T23:41:24.8688567+03:00",
+        "Donustarihi": "2019-06-12T23:41:24.8608609+03:00",
+        "Odas": [],
+        "Otels": []
+      }
+    ]
   },
   {
     "$type": "HotelReservation.Kullanici, HotelReservation",
@@ -87,6 +159,14 @@
     "Adi": "berat",
     "Mail": "berat@gmail.com",
     "Sifre": "berat",
-    "Rezervasyonlar": []
+    "Rezervasyonlar": [
+      {
+        "$type": "HotelReservation.Rezervasyon, HotelReservation",
+        "Gelistarihi": "2019-06-12T23:41:24.8688567+03:00",
+        "Donustarihi": "2019-06-12T23:41:24.8608609+03:00",
+        "Odas": [],
+        "Otels": []
+      }
+    ]
   }
 ]

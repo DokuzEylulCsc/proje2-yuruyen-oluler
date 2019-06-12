@@ -24,7 +24,11 @@ namespace HotelReservation.Forms
             otels = oteller;
             InitializeComponent();
         }
-        
+        private static List<Oda> odas;
+        public static List<Oda> GetOdas
+        {
+            get { return odas; }
+        }
         public static List<Otel> GetOtels
         {
             get { return otels; }
