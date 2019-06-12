@@ -22,8 +22,9 @@ namespace HotelReservation.Forms
             Admin admin = new Admin();
             if (textBox3.Text == admin.getSifre) //şifre kontrölü
             {
-                AdminPaneli adminPaneli = new AdminPaneli();
-                adminPaneli.Show(); this.Hide();
+                OtelEkleFormu otelEkleFormu = new OtelEkleFormu();
+                otelEkleFormu.Show();
+                this.Hide();
             }
            
         }

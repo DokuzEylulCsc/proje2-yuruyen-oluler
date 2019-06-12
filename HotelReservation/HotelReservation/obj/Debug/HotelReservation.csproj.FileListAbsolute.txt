@@ -16,10 +16,8 @@ C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\Hote
 C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\HotelReservation\bin\Debug\HotelReservation.exe
 C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\HotelReservation\bin\Debug\HotelReservation.pdb
 C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.csprojAssemblyReference.cache
-C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Form1.resources
 C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.AdminPaneli.resources
 C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.AdminÖzet.resources
-C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.KullanıcıBilgiGüncellemeFormu.resources
 C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.KullanıcıGiriş.resources
 C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.KullanıcıKayıtFormu.resources
 C:\Users\Zeynep\Desktop\Yeni klasör\proje2-yuruyen-oluler\HotelReservation\HotelReservation\obj\Debug\HotelReservation.Forms.OdaEkleFormu.resources

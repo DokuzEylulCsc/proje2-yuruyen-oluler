@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "$type": "HotelReservation.LuksOtel, HotelReservation",
     "Id": 1,
@@ -12,7 +12,63 @@
     "Internet": true,
     "SporSalonu": true,
     "OyunParki": true,
-    "Odalar": null
+    "Odalar": [
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": false,
+        "Jakuzi": false,
+        "DenizManzara": true,
+        "OtelId": 1,
+        "OdaId": 100,
+        "Fiyat": 400
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": false,
+        "Jakuzi": true,
+        "DenizManzara": true,
+        "OtelId": 1,
+        "OdaId": 101,
+        "Fiyat": 400
+      },
+      {
+        "$type": "HotelReservation.İkiKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": false,
+        "Jakuzi": true,
+        "DenizManzara": true,
+        "OtelId": 1,
+        "OdaId": 102,
+        "Fiyat": 400
+      },
+      {
+        "$type": "HotelReservation.TekKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": false,
+        "Jakuzi": true,
+        "DenizManzara": false,
+        "OtelId": 1,
+        "OdaId": 102,
+        "Fiyat": 250
+      },
+      {
+        "$type": "HotelReservation.UcKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": false,
+        "Jakuzi": true,
+        "DenizManzara": false,
+        "OtelId": 1,
+        "OdaId": 105,
+        "Fiyat": 600
+      }
+    ]
   },
   {
     "$type": "HotelReservation.LuksOtel, HotelReservation",
@@ -27,7 +83,52 @@
     "Internet": true,
     "SporSalonu": true,
     "OyunParki": true,
-    "Odalar": null
+    "Odalar": [
+      {
+        "$type": "HotelReservation.UcKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": false,
+        "OtelId": 2,
+        "OdaId": 106,
+        "Fiyat": 1000
+      },
+      {
+        "$type": "HotelReservation.İkiKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": false,
+        "OtelId": 2,
+        "OdaId": 106,
+        "Fiyat": 1000
+      },
+      {
+        "$type": "HotelReservation.TekKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": false,
+        "OtelId": 2,
+        "OdaId": 109,
+        "Fiyat": 1000
+      },
+      {
+        "$type": "HotelReservation.İkiKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": true,
+        "OtelId": 2,
+        "OdaId": 120,
+        "Fiyat": 900
+      }
+    ]
   },
   {
     "$type": "HotelReservation.LuksOtel, HotelReservation",
@@ -42,7 +143,52 @@
     "Internet": true,
     "SporSalonu": true,
     "OyunParki": false,
-    "Odalar": null
+    "Odalar": [
+      {
+        "$type": "HotelReservation.İkiKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": false,
+        "Jakuzi": false,
+        "DenizManzara": true,
+        "OtelId": 3,
+        "OdaId": 1,
+        "Fiyat": 400
+      },
+      {
+        "$type": "HotelReservation.TekKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": false,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": false,
+        "OtelId": 3,
+        "OdaId": 1,
+        "Fiyat": 300
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": false,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": false,
+        "OtelId": 3,
+        "OdaId": 2,
+        "Fiyat": 400
+      },
+      {
+        "$type": "HotelReservation.UcKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": false,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": false,
+        "OtelId": 3,
+        "OdaId": 3,
+        "Fiyat": 550
+      }
+    ]
   },
   {
     "$type": "HotelReservation.LuksOtel, HotelReservation",
@@ -57,7 +203,52 @@
     "Internet": true,
     "SporSalonu": true,
     "OyunParki": true,
-    "Odalar": null
+    "Odalar": [
+      {
+        "$type": "HotelReservation.TekKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": false,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": false,
+        "OtelId": 4,
+        "OdaId": 6,
+        "Fiyat": 360
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": false,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": false,
+        "OtelId": 4,
+        "OdaId": 7,
+        "Fiyat": 450
+      },
+      {
+        "$type": "HotelReservation.UcKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": true,
+        "OtelId": 4,
+        "OdaId": 7,
+        "Fiyat": 1200
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": true,
+        "OtelId": 4,
+        "OdaId": 9,
+        "Fiyat": 1600
+      }
+    ]
   },
   {
     "$type": "HotelReservation.LuksOtel, HotelReservation",
@@ -72,53 +263,109 @@
     "Internet": true,
     "SporSalonu": true,
     "OyunParki": false,
-    "Odalar": null
+    "Odalar": [
+      {
+        "$type": "HotelReservation.TekKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": false,
+        "OtelId": 5,
+        "OdaId": 500,
+        "Fiyat": 500
+      },
+      {
+        "$type": "HotelReservation.TekKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": false,
+        "OtelId": 5,
+        "OdaId": 501,
+        "Fiyat": 600
+      },
+      {
+        "$type": "HotelReservation.İkiKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": false,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": false,
+        "OtelId": 5,
+        "OdaId": 502,
+        "Fiyat": 750
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": true,
+        "OtelId": 5,
+        "OdaId": 503,
+        "Fiyat": 850
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": true,
+        "OtelId": 5,
+        "OdaId": 504,
+        "Fiyat": 850
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": true,
+        "OtelId": 5,
+        "OdaId": 505,
+        "Fiyat": 850
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": true,
+        "OtelId": 5,
+        "OdaId": 506,
+        "Fiyat": 850
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": true,
+        "OtelId": 5,
+        "OdaId": 507,
+        "Fiyat": 850
+      },
+      {
+        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
+        "OdaDurumu": 0,
+        "MiniBar": true,
+        "Tv": true,
+        "Jakuzi": true,
+        "DenizManzara": true,
+        "OtelId": 5,
+        "OdaId": 508,
+        "Fiyat": 850
+      }
+    ]
   },
-  {
-    "$type": "HotelReservation.LuksOtel, HotelReservation",
-    "Id": 6,
-    "Ad": "Lara Bulut",
-    "Yildiz": "5",
-    "Sehir": "Antalya",
-    "Sauna": true,
-    "AcikBufe": true,
-    "Spa": true,
-    "Havuz": true,
-    "Internet": true,
-    "SporSalonu": true,
-    "OyunParki": false,
-    "Odalar": null
-  },
-  {
-    "$type": "HotelReservation.LuksOtel, HotelReservation",
-    "Id": 7,
-    "Ad": "Delphin Diva",
-    "Yildiz": "5",
-    "Sehir": "Antalya",
-    "Sauna": true,
-    "AcikBufe": true,
-    "Spa": true,
-    "Havuz": true,
-    "Internet": true,
-    "SporSalonu": true,
-    "OyunParki": true,
-    "Odalar": null
-  },
-  {
-    "$type": "HotelReservation.LuksOtel, HotelReservation",
-    "Id": 8,
-    "Ad": "Swiss Otel",
-    "Yildiz": "5",
-    "Sehir": "İzmir",
-    "Sauna": true,
-    "AcikBufe": true,
-    "Spa": true,
-    "Havuz": true,
-    "Internet": true,
-    "SporSalonu": true,
-    "OyunParki": true,
-    "Odalar": null
-  },
+  
   {
     "$type": "HotelReservation.LuksOtel, HotelReservation",
     "Id": 9,
@@ -134,66 +381,7 @@
     "OyunParki": true,
     "Odalar": null
   },
-  {
-    "$type": "HotelReservation.LuksOtel, HotelReservation",
-    "Id": 10,
-    "Ad": "Key",
-    "Yildiz": "5",
-    "Sehir": "İzmir",
-    "Sauna": true,
-    "AcikBufe": true,
-    "Spa": true,
-    "Havuz": true,
-    "Internet": true,
-    "SporSalonu": true,
-    "OyunParki": true,
-    "Odalar": null
-  },
-  {
-    "$type": "HotelReservation.LuksOtel, HotelReservation",
-    "Id": 11,
-    "Ad": "Wyndham Grand",
-    "Yildiz": "5",
-    "Sehir": "İzmir",
-    "Sauna": true,
-    "AcikBufe": true,
-    "Spa": true,
-    "Havuz": true,
-    "Internet": true,
-    "SporSalonu": true,
-    "OyunParki": true,
-    "Odalar": null
-  },
-  {
-    "$type": "HotelReservation.LuksOtel, HotelReservation",
-    "Id": 12,
-    "Ad": "Crowne Plaza",
-    "Yildiz": "5",
-    "Sehir": "İzmir",
-    "Sauna": true,
-    "AcikBufe": true,
-    "Spa": true,
-    "Havuz": true,
-    "Internet": true,
-    "SporSalonu": true,
-    "OyunParki": false,
-    "Odalar": null
-  },
-  {
-    "$type": "HotelReservation.ButikOtel, HotelReservation",
-    "Id": 13,
-    "Ad": "Otantik Butik Otel",
-    "Yildiz": "4",
-    "Sehir": "Antalya",
-    "Sauna": false,
-    "AcikBufe": true,
-    "Spa": false,
-    "Havuz": true,
-    "Internet": true,
-    "SporSalonu": false,
-    "OyunParki": false,
-    "Odalar": null
-  },
+  
   {
     "$type": "HotelReservation.ButikOtel, HotelReservation",
     "Id": 14,
@@ -204,36 +392,6 @@
     "AcikBufe": true,
     "Spa": false,
     "Havuz": true,
-    "Internet": true,
-    "SporSalonu": false,
-    "OyunParki": false,
-    "Odalar": null
-  },
-  {
-    "$type": "HotelReservation.ButikOtel, HotelReservation",
-    "Id": 15,
-    "Ad": "Let'stay Boutique Hotel",
-    "Yildiz": "4",
-    "Sehir": "Antalya",
-    "Sauna": true,
-    "AcikBufe": true,
-    "Spa": false,
-    "Havuz": true,
-    "Internet": true,
-    "SporSalonu": false,
-    "OyunParki": false,
-    "Odalar": null
-  },
-  {
-    "$type": "HotelReservation.ButikOtel, HotelReservation",
-    "Id": 16,
-    "Ad": "Sedir Palas Butik Otel",
-    "Yildiz": "3",
-    "Sehir": "Antalya",
-    "Sauna": false,
-    "AcikBufe": true,
-    "Spa": false,
-    "Havuz": false,
     "Internet": true,
     "SporSalonu": false,
     "OyunParki": false,
@@ -270,21 +428,6 @@
     "Odalar": null
   },
   {
-    "$type": "HotelReservation.ButikOtel, HotelReservation",
-    "Id": 19,
-    "Ad": "Casa Bella Hotel ",
-    "Yildiz": "5",
-    "Sehir": "İzmir",
-    "Sauna": false,
-    "AcikBufe": true,
-    "Spa": true,
-    "Havuz": true,
-    "Internet": true,
-    "SporSalonu": false,
-    "OyunParki": false,
-    "Odalar": null
-  },
-  {
     "$type": "HotelReservation.PansiyonOtel, HotelReservation",
     "Id": 20,
     "Ad": "Deniz Pansiyon",
@@ -303,21 +446,6 @@
     "$type": "HotelReservation.PansiyonOtel, HotelReservation",
     "Id": 21,
     "Ad": "Kalispera Pansiyon",
-    "Yildiz": "2",
-    "Sehir": "İzmir",
-    "Sauna": false,
-    "AcikBufe": false,
-    "Spa": false,
-    "Havuz": false,
-    "Internet": true,
-    "SporSalonu": false,
-    "OyunParki": false,
-    "Odalar": null
-  },
-  {
-    "$type": "HotelReservation.PansiyonOtel, HotelReservation",
-    "Id": 22,
-    "Ad": "Şirincem Pension",
     "Yildiz": "2",
     "Sehir": "İzmir",
     "Sauna": false,
@@ -360,39 +488,9 @@
     "Odalar": null
   },
   {
-    "$type": "HotelReservation.PansiyonOtel, HotelReservation",
-    "Id": 25,
-    "Ad": "Olympos Çamlık Pansiyon",
-    "Yildiz": "2",
-    "Sehir": "Antalya",
-    "Sauna": false,
-    "AcikBufe": false,
-    "Spa": false,
-    "Havuz": false,
-    "Internet": true,
-    "SporSalonu": false,
-    "OyunParki": false,
-    "Odalar": null
-  },
-  {
     "$type": "HotelReservation.TatilKöyüOtel, HotelReservation",
     "Id": 26,
     "Ad": "Zigana Yayla Tatil Köyü",
-    "Yildiz": "4",
-    "Sehir": "Trabzon",
-    "Sauna": false,
-    "AcikBufe": true,
-    "Spa": false,
-    "Havuz": false,
-    "Internet": true,
-    "SporSalonu": false,
-    "OyunParki": true,
-    "Odalar": null
-  },
-  {
-    "$type": "HotelReservation.TatilKöyüOtel, HotelReservation",
-    "Id": 27,
-    "Ad": "Zigana Gümüşkayak Yaylakent",
     "Yildiz": "4",
     "Sehir": "Trabzon",
     "Sauna": false,
@@ -458,99 +556,6 @@
         "OtelId": 98,
         "OdaId": 123,
         "Fiyat": 560
-      }
-    ]
-  },
-  {
-    "$type": "HotelReservation.PansiyonOtel, HotelReservation",
-    "Id": 12,
-    "Ad": "Otel",
-    "Yildiz": "3",
-    "Sehir": "İzmir",
-    "Sauna": false,
-    "AcikBufe": false,
-    "Spa": false,
-    "Havuz": false,
-    "Internet": false,
-    "SporSalonu": false,
-    "OyunParki": false,
-    "Odalar": [
-      {
-        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
-        "OdaDurumu": 0,
-        "MiniBar": false,
-        "Tv": false,
-        "Jakuzi": false,
-        "DenizManzara": false,
-        "OtelId": 12,
-        "OdaId": 1,
-        "Fiyat": 78
-      },
-      {
-        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
-        "OdaDurumu": 0,
-        "MiniBar": false,
-        "Tv": false,
-        "Jakuzi": false,
-        "DenizManzara": false,
-        "OtelId": 12,
-        "OdaId": 1,
-        "Fiyat": 78
-      },
-      {
-        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
-        "OdaDurumu": 0,
-        "MiniBar": false,
-        "Tv": false,
-        "Jakuzi": false,
-        "DenizManzara": false,
-        "OtelId": 12,
-        "OdaId": 1,
-        "Fiyat": 78
-      },
-      {
-        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
-        "OdaDurumu": 0,
-        "MiniBar": false,
-        "Tv": false,
-        "Jakuzi": false,
-        "DenizManzara": false,
-        "OtelId": 12,
-        "OdaId": 1,
-        "Fiyat": 78
-      },
-      {
-        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
-        "OdaDurumu": 0,
-        "MiniBar": false,
-        "Tv": false,
-        "Jakuzi": false,
-        "DenizManzara": false,
-        "OtelId": 12,
-        "OdaId": 1,
-        "Fiyat": 78
-      },
-      {
-        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
-        "OdaDurumu": 0,
-        "MiniBar": false,
-        "Tv": false,
-        "Jakuzi": false,
-        "DenizManzara": false,
-        "OtelId": 12,
-        "OdaId": 1,
-        "Fiyat": 78
-      },
-      {
-        "$type": "HotelReservation.CiftKisilikOda, HotelReservation",
-        "OdaDurumu": 0,
-        "MiniBar": false,
-        "Tv": false,
-        "Jakuzi": false,
-        "DenizManzara": false,
-        "OtelId": 12,
-        "OdaId": 1,
-        "Fiyat": 78
       }
     ]
   }

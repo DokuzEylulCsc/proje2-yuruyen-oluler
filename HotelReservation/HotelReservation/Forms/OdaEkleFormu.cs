@@ -48,15 +48,7 @@ namespace HotelReservation.Forms
             }
                     
         }
-        public void yazdir()
-        {
-
-            foreach (Otel otel in otels)
-            {
-                listBox1.Items.Add(otel.Odalar);
-            }
-
-        }
+       
 
         private void OdaEkleFormu_Load(object sender, EventArgs e)
         {

@@ -71,7 +71,6 @@ namespace HotelReservation.Forms
                 IOtel otelTatil = ProduceOtel(OtelType.TatilKöyüOtel);
                 otels.Add((Otel)otelTatil);
             }
-            listBox1.Items.Clear();
 
             dosyaOlustur();
         }
@@ -90,14 +89,7 @@ namespace HotelReservation.Forms
             sW.Close();
             fileStream.Close();
         }
-        public void yazdir()
-        {
-            foreach (Otel otel in otels)
-            {
-                listBox1.Items.Add(otel.Ad);
-            }
-
-        }
+     
        
         private void button2_Click(object sender, EventArgs e)
         {
@@ -130,7 +122,6 @@ namespace HotelReservation.Forms
             {
                 TypeNameHandling = TypeNameHandling.Objects
             });
-            yazdir();
             
             /*
             otels.AddRange(new List<Otel>() //https://www.tutorialsteacher.com/csharp/csharp-list
@@ -177,6 +168,13 @@ namespace HotelReservation.Forms
             this.Hide();
             
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OdaEkleFormu odaEkleFormu = new OdaEkleFormu(otels);
+            odaEkleFormu.Show();
+            this.Hide();
         }
     }
 }
